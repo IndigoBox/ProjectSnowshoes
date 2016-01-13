@@ -24,3 +24,47 @@ C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Release
 C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.csproj.ResolveComReference.cache
 C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\Release\Interop.WMPLib.dll
 C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\Release\AxInterop.WMPLib.dll
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\bin\Release\ProjectSnowshoes.exe.config
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\Interop.WMPLib.dll
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.csproj.ResolveComReference.cache
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.exe
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.pdb
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.csprojResolveAssemblyReference.cache
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.AboutSnowshoes.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.AccInfo.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.AppsSlidingMenu.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.BackgroundFunctionManager.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.BattCritical.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.BattLow.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.BottomBar.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.BottomBar_Concept124.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.CanWeMakeAHoverFormLikeThisIsThisLegal.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.ChangeBackground.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.CustomSearchImplementationOne.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.Documents.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.DualImageForm.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.Form1.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.ImagesOnMenu.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.LockScreen_TrueColors_V2.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.Login.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.MinervaIntegrated.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.MultipleUsersMain.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.NewAccount_New1.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.NewAccount_New2.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.NewAccount_Step1.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.NewAccount_Step2.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.Notification.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.ObviouslyTurnUpOnAuth.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.ObviouslyTurnUpOnLogIn.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.PrelimSetup.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.Properties.Resources.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.SearchFromSlidingBar.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.SlidingMenuBar.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.SlidingMenuBarPostEG.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.Space.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.ThanksScn9A.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.ThisMayFixTransparency.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.UserSettings.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.VirtualKeyboardsForScience.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.WoahWoahWoah.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\Release\ProjectSnowshoes.csproj.GenerateResource.Cache

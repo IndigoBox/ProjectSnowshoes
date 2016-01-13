@@ -833,7 +833,7 @@ namespace ProjectSnowshoes
             {
                 arcadePanel_Reflektions.Text = "Copying app shortcut \"" + Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\')[
                     Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\').Length - 1] + "\"";
-                Application.DoEvents();
+                this.Invalidate();
                 File.Copy(Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i],
                     @"C:\ProjectSnowshoes\User\" + formalName + @"\Apps\" + Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\')[
                     Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\').Length - 1]);
@@ -843,6 +843,7 @@ namespace ProjectSnowshoes
             for (int j = 0; j < Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.TopDirectoryOnly).Length; j++)
             {
                 arcadePanel_Reflektions.Text = "Placing " + appsCopyPath + "on Space...";
+                this.Invalidate();
                 File.Copy(Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.TopDirectoryOnly)[j],
                     @"C:\ProjectSnowshoes\User\" + formalName + @"\Space\" + Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.AllDirectories)[j].Split('\\')[
                     Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.AllDirectories)[j].Split('\\').Length - 1]);
@@ -971,7 +972,7 @@ namespace ProjectSnowshoes
                     {
                         File.Copy(fi.FullName, @"C:\ProjectSnowshoes\User\" + formalName + @"\Pictures\" + fi.FullName.Replace(imgCopyPath, ""));
                         arcadePanel_Reflektions.Text = "Copying file: " + fi.FullName + " to Pictures\\" + fi.FullName.Replace(imgCopyPath, "");
-                        
+                        this.Invalidate();
                     }
                 }
                 // "Now find all the subdirectories under this directory."
