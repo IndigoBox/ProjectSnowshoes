@@ -1,0 +1,31 @@
+[Theme]
+DisplayName=Snowshoes Manual Set Theme
+
+; Recycle Bin
+[CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+Full=C:\Users\Robert\Pictures\IconSet\Square\Recycle.ico
+Empty=C:\Users\Robert\Pictures\IconSet\Square\Recycle.ico
+
+[Control Panel\Colors]
+ActiveTitle=68 114 196
+InactiveTitle=255 255 255
+InactiveTitleText=255 255 255
+TitleText=68 114 196
+
+[Control Panel\Desktop]
+Wallpaper=C:\ProjectSnowshoes\System\Media\RunningOnIce.png
+TileWallpaper=0
+WallpaperStyle=2
+
+[VisualStyles]
+Path=%SystemRoot%\resources\Themes\Aero\AeroLite.msstyles
+ColorStyle=NormalColor
+Size=NormalSize
+ColorizationColor=0X7298844C
+Transparency=1
+
+[boot]
+SCRNSAVE.EXE=%WinDir%\System32\Ribbons.scr
+
+[MasterThemeSelector]
+MTSM=DABJDKT
