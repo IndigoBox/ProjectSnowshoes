@@ -1,0 +1,17 @@
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\Debug\ProjectSnowshoes.exe.config
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\Debug\ProjectSnowshoes.exe
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\Debug\ProjectSnowshoes.pdb
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.csprojResolveAssemblyReference.cache
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.Form1.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.Properties.Resources.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.csproj.GenerateResource.Cache
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.exe
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.pdb
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.Login.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.Space.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.Notification.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.ChangeBackground.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.ObviouslyTurnUpOnLogIn.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.ObviouslyTurnUpOnAuth.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\Debug\ProjectSnowshoes.AboutSnowshoes.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\Debug\ImageProcessor.dll

@@ -1,0 +1,173 @@
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ProjectSnowshoes.exe.config
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\Interop.WMPLib.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csproj.ResolveComReference.cache
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.exe
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.pdb
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AboutSnowshoes.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AccInfo.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AppsSlidingMenu.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BackgroundFunctionManager.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BattCritical.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BattLow.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BottomBar.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BottomBar_Concept124.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.CanWeMakeAHoverFormLikeThisIsThisLegal.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ChangeBackground.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.CustomSearchImplementationOne.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Documents.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.DualImageForm.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Form1.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Login.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.MinervaIntegrated.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.MultipleUsersMain.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_New1.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_Step1.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_Step2.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Notification.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ObviouslyTurnUpOnAuth.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ObviouslyTurnUpOnLogIn.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.PrelimSetup.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Properties.Resources.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.SearchFromSlidingBar.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.SlidingMenuBar.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.SlidingMenuBarPostEG.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Space.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ThanksScn9A.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ThisMayFixTransparency.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.UserSettings.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.VirtualKeyboardsForScience.resources
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csproj.GenerateResource.Cache
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ProjectSnowshoes.exe
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ProjectSnowshoes.pdb
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\AxInterop.WMPLib.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ImageProcessor.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Transitions.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Interop.WMPLib.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Sensors.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.xml
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.xml
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Sensors.xml
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.xml
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\VS Programs\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csprojResolveAssemblyReference.cache
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ProjectSnowshoes.exe.config
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ProjectSnowshoes.exe
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ProjectSnowshoes.pdb
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\AxInterop.WMPLib.dll
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ImageProcessor.dll
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.dll
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Sensors.dll
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Interop.WMPLib.dll
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.xml
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.xml
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Sensors.xml
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.xml
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\Interop.WMPLib.dll
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csproj.ResolveComReference.cache
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AboutSnowshoes.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AccInfo.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AppsSlidingMenu.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BackgroundFunctionManager.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BattCritical.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BattLow.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BottomBar.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BottomBar_Concept124.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.CanWeMakeAHoverFormLikeThisIsThisLegal.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ChangeBackground.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.CustomSearchImplementationOne.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Documents.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.DualImageForm.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Form1.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.LockScreen_TrueColors_V2.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Login.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.MinervaIntegrated.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.MultipleUsersMain.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_Step1.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_Step2.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Notification.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ObviouslyTurnUpOnAuth.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ObviouslyTurnUpOnLogIn.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.PrelimSetup.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Properties.Resources.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.SearchFromSlidingBar.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.SlidingMenuBar.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.SlidingMenuBarPostEG.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Space.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ThanksScn9A.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ThisMayFixTransparency.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.UserSettings.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.VirtualKeyboardsForScience.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.WoahWoahWoah.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csproj.GenerateResource.Cache
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.exe
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.pdb
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_New1.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_New2.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ImagesOnMenu.resources
+C:\ProjectSnowshoesProject\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ProjectSnowshoes.exe.config
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\Interop.WMPLib.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csproj.ResolveComReference.cache
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.exe
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.pdb
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ProjectSnowshoes.exe
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ProjectSnowshoes.pdb
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\AxInterop.WMPLib.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\ImageProcessor.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Sensors.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Interop.WMPLib.dll
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.xml
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.xml
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Sensors.xml
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.xml
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csprojResolveAssemblyReference.cache
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AboutSnowshoes.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AccInfo.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AppsSlidingMenu.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BackgroundFunctionManager.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BattCritical.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BattLow.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BottomBar.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.BottomBar_Concept124.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.CanWeMakeAHoverFormLikeThisIsThisLegal.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ChangeBackground.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.CustomSearchImplementationOne.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Documents.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.DualImageForm.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Form1.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ImagesOnMenu.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.LockScreen_TrueColors_V2.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Login.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.MinervaIntegrated.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.MultipleUsersMain.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_New1.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_New2.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_Step1.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.NewAccount_Step2.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Notification.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ObviouslyTurnUpOnAuth.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ObviouslyTurnUpOnLogIn.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.PrelimSetup.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Properties.Resources.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.SearchFromSlidingBar.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.SlidingMenuBar.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.SlidingMenuBarPostEG.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.Space.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ThanksScn9A.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.ThisMayFixTransparency.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.UserSettings.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.VirtualKeyboardsForScience.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.WoahWoahWoah.resources
+C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csproj.GenerateResource.Cache

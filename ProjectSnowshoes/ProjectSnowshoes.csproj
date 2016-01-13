@@ -1,0 +1,761 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42DD968A-A067-4F1C-8DE4-B25FC4730EB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectSnowshoes</RootNamespace>
+    <AssemblyName>ProjectSnowshoes</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PS.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ImageProcessor">
+      <HintPath>..\packages\ImageProcessor.2.0.1.0\lib\net45\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SpeechLib">
+      <HintPath>..\..\..\..\..\..\Minerva\Minerva\obj\Debug\Interop.SpeechLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>..\packages\WindowsAPICodePack-Core.1.1.1\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.ExtendedLinguisticServices">
+      <HintPath>..\packages\WindowsAPICodePack-ExtendedLinguisticServices.1.1.1\lib\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Sensors">
+      <HintPath>..\packages\WindowsAPICodePack-Sensors.1.1.1\lib\Microsoft.WindowsAPICodePack.Sensors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>..\packages\WindowsAPICodePack-Shell.1.1.1\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.ShellExtensions">
+      <HintPath>..\packages\WindowsAPICodePack-ShellExtensions.1.1.1\lib\Microsoft.WindowsAPICodePack.ShellExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions">
+      <HintPath>..\..\..\..\..\..\Users\Robert\Downloads\TransitionsSample_1_2\Transitions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutSnowshoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutSnowshoes.Designer.cs">
+      <DependentUpon>AboutSnowshoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccInfo.Designer.cs">
+      <DependentUpon>AccInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllTheLittleIcons.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppsSlidingMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsSlidingMenu.Designer.cs">
+      <DependentUpon>AppsSlidingMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackgroundFunctionManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackgroundFunctionManager.Designer.cs">
+      <DependentUpon>BackgroundFunctionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BattCritical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BattCritical.Designer.cs">
+      <DependentUpon>BattCritical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BattLow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BattLow.Designer.cs">
+      <DependentUpon>BattLow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BottomBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BottomBar.Designer.cs">
+      <DependentUpon>BottomBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BottomBar_Concept124.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BottomBar_Concept124.Designer.cs">
+      <DependentUpon>BottomBar_Concept124.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BottomPanelLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CanWeMakeAHoverFormLikeThisIsThisLegal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CanWeMakeAHoverFormLikeThisIsThisLegal.Designer.cs">
+      <DependentUpon>CanWeMakeAHoverFormLikeThisIsThisLegal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeBackground.Designer.cs">
+      <DependentUpon>ChangeBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoreNativeMethods.cs" />
+    <Compile Include="CustomSearchImplementationOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomSearchImplementationOne.Designer.cs">
+      <DependentUpon>CustomSearchImplementationOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents.Designer.cs">
+      <DependentUpon>Documents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoubleBufferManipulation.cs" />
+    <Compile Include="DualImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DualImageForm.Designer.cs">
+      <DependentUpon>DualImageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IconManager.cs" />
+    <Compile Include="ImagesOnMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImagesOnMenu.Designer.cs">
+      <DependentUpon>ImagesOnMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LockScreen-TrueColors-V2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LockScreen-TrueColors-V2.Designer.cs">
+      <DependentUpon>LockScreen-TrueColors-V2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuContextRenderer.cs" />
+    <Compile Include="MinervaIntegrated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinervaIntegrated.Designer.cs">
+      <DependentUpon>MinervaIntegrated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultipleUsersMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultipleUsersMain.Designer.cs">
+      <DependentUpon>MultipleUsersMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAccount-New1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAccount-New1.Designer.cs">
+      <DependentUpon>NewAccount-New1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAccount-New2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAccount-New2.Designer.cs">
+      <DependentUpon>NewAccount-New2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAccount-Step1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAccount-Step1.Designer.cs">
+      <DependentUpon>NewAccount-Step1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAccount-Step2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAccount-Step2.Designer.cs">
+      <DependentUpon>NewAccount-Step2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObviouslyTurnUpOnAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObviouslyTurnUpOnAuth.Designer.cs">
+      <DependentUpon>ObviouslyTurnUpOnAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObviouslyTurnUpOnLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObviouslyTurnUpOnLogIn.Designer.cs">
+      <DependentUpon>ObviouslyTurnUpOnLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrelimSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrelimSetup.Designer.cs">
+      <DependentUpon>PrelimSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessRunEventArgs.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResolutionDisplayStyleManagement.cs" />
+    <Compile Include="SearchFromSlidingBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchFromSlidingBar.Designer.cs">
+      <DependentUpon>SearchFromSlidingBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SlidingMenuBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlidingMenuBar.Designer.cs">
+      <DependentUpon>SlidingMenuBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlidingMenuBarPostEG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlidingMenuBarPostEG.Designer.cs">
+      <DependentUpon>SlidingMenuBarPostEG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Space.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Space.Designer.cs">
+      <DependentUpon>Space.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanksScn9A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanksScn9A.Designer.cs">
+      <DependentUpon>ThanksScn9A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThereAreFontsInteresting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThereAreFontsInteresting.Designer.cs">
+      <DependentUpon>ThereAreFontsInteresting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThisMayFixTransparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThisMayFixTransparency.Designer.cs">
+      <DependentUpon>ThisMayFixTransparency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentLabelAtt2.cs" />
+    <Compile Include="UserFontSet.cs" />
+    <Compile Include="UserSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSettings.Designer.cs">
+      <DependentUpon>UserSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VirtualKeyboardsForScience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VirtualKeyboardsForScience.Designer.cs">
+      <DependentUpon>VirtualKeyboardsForScience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WoahWoahWoah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WoahWoahWoah.Designer.cs" />
+    <EmbeddedResource Include="AboutSnowshoes.resx">
+      <DependentUpon>AboutSnowshoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccInfo.resx">
+      <DependentUpon>AccInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsSlidingMenu.resx">
+      <DependentUpon>AppsSlidingMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackgroundFunctionManager.resx">
+      <DependentUpon>BackgroundFunctionManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BattCritical.resx">
+      <DependentUpon>BattCritical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BattLow.resx">
+      <DependentUpon>BattLow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BottomBar.resx">
+      <DependentUpon>BottomBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BottomBar_Concept124.resx">
+      <DependentUpon>BottomBar_Concept124.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CanWeMakeAHoverFormLikeThisIsThisLegal.resx">
+      <DependentUpon>CanWeMakeAHoverFormLikeThisIsThisLegal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeBackground.resx">
+      <DependentUpon>ChangeBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomSearchImplementationOne.resx">
+      <DependentUpon>CustomSearchImplementationOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents.resx">
+      <DependentUpon>Documents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DualImageForm.resx">
+      <DependentUpon>DualImageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagesOnMenu.resx">
+      <DependentUpon>ImagesOnMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockScreen-TrueColors-V2.resx">
+      <DependentUpon>LockScreen-TrueColors-V2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinervaIntegrated.resx">
+      <DependentUpon>MinervaIntegrated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultipleUsersMain.resx">
+      <DependentUpon>MultipleUsersMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAccount-New1.resx">
+      <DependentUpon>NewAccount-New1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAccount-New2.resx">
+      <DependentUpon>NewAccount-New2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAccount-Step1.resx">
+      <DependentUpon>NewAccount-Step1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAccount-Step2.resx">
+      <DependentUpon>NewAccount-Step2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObviouslyTurnUpOnAuth.resx">
+      <DependentUpon>ObviouslyTurnUpOnAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObviouslyTurnUpOnLogIn.resx">
+      <DependentUpon>ObviouslyTurnUpOnLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrelimSetup.resx">
+      <DependentUpon>PrelimSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SearchFromSlidingBar.resx">
+      <DependentUpon>SearchFromSlidingBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlidingMenuBar.resx">
+      <DependentUpon>SlidingMenuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlidingMenuBarPostEG.resx">
+      <DependentUpon>SlidingMenuBarPostEG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Space.resx">
+      <DependentUpon>Space.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanksScn9A.resx">
+      <DependentUpon>ThanksScn9A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThisMayFixTransparency.resx">
+      <DependentUpon>ThisMayFixTransparency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSettings.resx">
+      <DependentUpon>UserSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VirtualKeyboardsForScience.resx">
+      <DependentUpon>VirtualKeyboardsForScience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WoahWoahWoah.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WoahWoahWoah1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\AboutSnowshoes.datasource" />
+    <None Include="Properties\DataSources\ChangeBackground.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\Login.datasource" />
+    <None Include="Properties\DataSources\menuContextColorSet.datasource" />
+    <None Include="Properties\DataSources\MenuContextRenderer.datasource" />
+    <None Include="Properties\DataSources\Notification.datasource" />
+    <None Include="Properties\DataSources\ObviouslyTurnUpOnAuth.datasource" />
+    <None Include="Properties\DataSources\ObviouslyTurnUpOnLogIn.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\ProjectSnowshoes.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\ProjectSnowshoes.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Space.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mountain_Snow_,_Oshtorankuh_,_AZNA[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50pertrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToWindows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueWire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VerticalBlueWire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture Sample 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheOpacityIsAlmostReal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img104.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50pertrans_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doc1204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Styx_-_Paradise_Theater[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20pertrans_lighterGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wargames[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-bridge-4e802407b8b80[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whitetransback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsadogelikeomgman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AltTabGear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minerva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minerva820-Silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppsIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thatBridgeIsReallyBlurryWow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thatBridgeIsReallyBlurryWow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonsOfScience.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XWow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlusOne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spaaaaaaaaaaaaaaaaaace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spaaaaaaaaaaaaaaaaaace1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WooooooooooooooooooooooooooooooooooooooDoges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LookAtDat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroceryShoppingCheckmarks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphygifgifs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThisBatterySymbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackBackSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TryIt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20pertrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20pertransbl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34bl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34wh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TryAnotherBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aero_glass_png_clipart_texture_by_diamond00744-d671l1n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhoAreYou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhoAreYou1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackBackSearch1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearSmallAww.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocsAgain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocsAgain1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocsAgain2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMeanSure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ps_smalllogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackBlurYetAgain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marchMadness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlGrayGradientWithDots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlGrayGradientWithDots1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RunningOnIce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomeSpace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SomeSpace1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PS.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
