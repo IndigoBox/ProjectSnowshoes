@@ -1,7 +1,7 @@
 # Project Snowshoes
 Redefining the Windows interface for everybody...and the actual word "Snowshoes" apparently.
 
-Welcome, friends, family, colleagues, dogs that run around the studio, and random prowling bots! This is the first commit for Project Snowshoes, a project that previously had its code privately held for a year and a half. Now, anything that gets done can actually be seen here. 
+Welcome, friends, family, colleagues, dogs that run around the studio, and random prowling bots! This is the official repository for Project Snowshoes, a project that previously had its code privately held for a year and a half. Now, anything that gets done can actually be seen here. 
 
 #What am I looking at?
 There are two things that Project Snowshoes needs: the main program that controls and manages everything, and dependencies as well as bundled programs that get installed when the client runs through the SnowshoesInstaller (sorry, no repo for that, but I promise you are not missing much there). 
