@@ -29,6 +29,8 @@ namespace ProjectSnowshoes
 
         String hiWhatNow;
 
+        bool colSelected;
+
         int spaceGuide, milesToGoBeforeISleep;
 
         
@@ -218,6 +220,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "Black";
             Transition.run(this, "BackColor", Color.Black, new TransitionType_EaseInEaseOut(200));
+            colSelected = true;
             button1.Text = "✓";
             button2.Text = "";
             button3.Text = "";
@@ -242,7 +245,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "Maroon";
             Transition.run(this, "BackColor", Color.Maroon, new TransitionType_EaseInEaseOut(200));
-            
+            colSelected = true;
             button1.Text = "";
             button2.Text = "✓";
             button3.Text = "";
@@ -267,7 +270,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "Sienna";
             Transition.run(this, "BackColor", Color.Sienna, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "✓";
@@ -292,7 +295,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "DarkOrange";
             Transition.run(this, "BackColor", Color.DarkOrange, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -317,7 +320,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "Goldenrod";
             Transition.run(this, "BackColor", Color.Goldenrod, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -342,7 +345,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "SeaGreen";
             Transition.run(this, "BackColor", Color.SeaGreen, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -367,7 +370,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "LightSeaGreen";
             Transition.run(this, "BackColor", Color.LightSeaGreen, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -392,7 +395,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "Teal";
             Transition.run(this, "BackColor", Color.Teal, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -417,7 +420,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "DeepSkyBlue";
             Transition.run(this, "BackColor", Color.DeepSkyBlue, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -442,7 +445,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "SteelBlue";
             Transition.run(this, "BackColor", Color.SteelBlue, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -467,7 +470,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "RoyalBlue";
             Transition.run(this, "BackColor", Color.RoyalBlue, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -492,7 +495,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "MidnightBlue";
             Transition.run(this, "BackColor", Color.MidnightBlue, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -517,7 +520,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "BlueViolet";
             Transition.run(this, "BackColor", Color.BlueViolet, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -542,7 +545,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "Indigo";
             Transition.run(this, "BackColor", Color.Indigo, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -567,7 +570,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "DarkViolet";
             Transition.run(this, "BackColor", Color.DarkViolet, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -592,7 +595,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "Fuchsia";
             Transition.run(this, "BackColor", Color.Fuchsia, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -617,7 +620,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "MediumVioletRed";
             Transition.run(this, "BackColor", Color.MediumVioletRed, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -642,7 +645,7 @@ namespace ProjectSnowshoes
         {
             accentColor = "Crimson";
             Transition.run(this, "BackColor", Color.Crimson, new TransitionType_EaseInEaseOut(200));
-
+            colSelected = true;
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
@@ -665,11 +668,20 @@ namespace ProjectSnowshoes
 
         private void aestheticsColorPanel_Proceed_Click(object sender, EventArgs e)
         {
-            accountPicturePanel_Name.Text = formalName;
-            
-            Transition.run(aestheticsColorPanel, "Left", this.Width, new TransitionType_Linear(220));
-            Transition.run(accountPicturePanel, "Left", milesToGoBeforeISleep, new TransitionType_Linear(220));
-            Transition.run(this, "BackColor", Color.FromArgb(255, 32, 87, 143), new TransitionType_EaseInEaseOut(200));
+            String rmsg = "You have to pick a color before moving on. No worries...you can change it later on.";
+            if (colSelected)
+            {
+                accountPicturePanel_Name.Text = formalName;
+
+                Transition.run(aestheticsColorPanel, "Left", this.Width, new TransitionType_Linear(220));
+                Transition.run(accountPicturePanel, "Left", milesToGoBeforeISleep, new TransitionType_Linear(220));
+                Transition.run(this, "BackColor", Color.FromArgb(255, 32, 87, 143), new TransitionType_EaseInEaseOut(200));
+            }
+            else
+            {
+                Transition.run(this, "BackColor", Color.DarkRed, new TransitionType_EaseInEaseOut(200));
+                aestheticsColorPanel_Information.Text = rmsg;
+            }
         }
 
         private void accountPicturePanel_Change_Click(object sender, EventArgs e)
