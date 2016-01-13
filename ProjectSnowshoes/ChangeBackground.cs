@@ -139,7 +139,7 @@ namespace ProjectSnowshoes
                         colorLayoutPanel.Controls.Clear();
 
                         Transition.run(this, "Width", this.Width, this.Width - 269, new TransitionType_Acceleration(340));
-
+                        panelClicked = false;
                     };
 
                     theName.Click += (senderA, args) =>
@@ -160,6 +160,7 @@ namespace ProjectSnowshoes
                         colorLayoutPanel.Controls.Clear();
 
                         Transition.run(this, "Width", this.Width, this.Width - 269, new TransitionType_Acceleration(340));
+                        panelClicked = false;
                     };
                 }
 
