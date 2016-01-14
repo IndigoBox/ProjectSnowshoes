@@ -33,6 +33,7 @@ namespace ProjectSnowshoes
         private void moreTimersWell_Tick(object sender, EventArgs e)
         {
             batteryManagement();
+            cleanUpMinerva();
             //spotifyPullNotification();
         }
 
@@ -54,6 +55,17 @@ namespace ProjectSnowshoes
                     }
                 
                 
+            }
+        }
+
+        private void cleanUpMinerva()
+        {
+            for (int i = 0; i < Application.OpenForms.Count; i++)
+            {
+                if (!Application.OpenForms[i].ContainsFocus && Application.OpenForms[i].Name == "MinervaIntegrated")
+                {
+                    Application.OpenForms[i].Close();
+                }
             }
         }
 

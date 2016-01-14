@@ -115,7 +115,7 @@ namespace ProjectSnowshoes
                 mediaLib = prefs[0];
                 findSongs();
             }
-            startSpeech();
+            // startSpeech(); We are not doing speech just yet for Minerva in general, and will likely work with Webkit Speech Synthesis and Recognition instead.
         }
 
         [DllImport("user32")]
