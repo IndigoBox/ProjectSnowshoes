@@ -187,7 +187,6 @@ C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Sensors.xml
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.xml
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\bin\x64\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
-C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csprojResolveAssemblyReference.cache
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\Interop.WMPLib.dll
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csproj.ResolveComReference.cache
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.AboutSnowshoes.resources
