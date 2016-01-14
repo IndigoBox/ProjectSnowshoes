@@ -28,6 +28,8 @@ namespace ProjectSnowshoes
         private void UserSettings_Load(object sender, EventArgs e)
         {
 
+            
+
             this.Top = Screen.PrimaryScreen.WorkingArea.Height / 2 - 240;
             this.Left = Screen.PrimaryScreen.WorkingArea.Width / 2 - 320;
             

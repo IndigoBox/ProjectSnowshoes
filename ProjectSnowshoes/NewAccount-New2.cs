@@ -736,6 +736,8 @@ namespace ProjectSnowshoes
             }
         }
 
+        
+
         private void mayfieldPanel_Apps_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog spacefbd = new FolderBrowserDialog();
@@ -928,6 +930,11 @@ namespace ProjectSnowshoes
             spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaace.BringToFront();
             Properties.Settings.Default.loggedIn[Properties.Settings.Default.whoIsThisCrazyDoge] = "true";
             this.Close();
+
+        }
+
+        private void bgWriter_DoWork(object sender, DoWorkEventArgs e)
+        {
 
         }
 

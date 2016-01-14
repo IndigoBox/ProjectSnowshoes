@@ -109,6 +109,7 @@
             this.arcadePanel_Create = new System.Windows.Forms.Button();
             this.arcadePanel_TheSuburbs = new System.Windows.Forms.Label();
             this.arcadePanel_ReadyToStart = new System.Windows.Forms.Label();
+            this.bgWriter = new System.ComponentModel.BackgroundWorker();
             this.about1Panel1.SuspendLayout();
             this.passwordPanel_2.SuspendLayout();
             this.aestheticsColorPanel.SuspendLayout();
@@ -134,7 +135,7 @@
             this.label4.ForeColor = System.Drawing.Color.DarkGray;
             this.label4.Location = new System.Drawing.Point(174, 702);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 26);
+            this.label4.Size = new System.Drawing.Size(150, 24);
             this.label4.TabIndex = 9;
             this.label4.Text = "The Bridge Build";
             // 
@@ -146,7 +147,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(172, 653);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(279, 40);
+            this.label3.Size = new System.Drawing.Size(277, 37);
             this.label3.TabIndex = 8;
             this.label3.Text = "Project Snowshoes";
             // 
@@ -234,7 +235,7 @@
             this.about1Panel1_Text.ForeColor = System.Drawing.Color.White;
             this.about1Panel1_Text.Location = new System.Drawing.Point(337, 293);
             this.about1Panel1_Text.Name = "about1Panel1_Text";
-            this.about1Panel1_Text.Size = new System.Drawing.Size(224, 29);
+            this.about1Panel1_Text.Size = new System.Drawing.Size(224, 27);
             this.about1Panel1_Text.TabIndex = 18;
             // 
             // about1Panel1_Caption
@@ -319,7 +320,7 @@
             this.password_ThatPWTho.ForeColor = System.Drawing.Color.White;
             this.password_ThatPWTho.Location = new System.Drawing.Point(337, 293);
             this.password_ThatPWTho.Name = "password_ThatPWTho";
-            this.password_ThatPWTho.Size = new System.Drawing.Size(224, 29);
+            this.password_ThatPWTho.Size = new System.Drawing.Size(224, 27);
             this.password_ThatPWTho.TabIndex = 18;
             this.password_ThatPWTho.TextChanged += new System.EventHandler(this.password_ThatPWTho_TextChanged);
             this.password_ThatPWTho.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.password_ThatPWTho_KeyPress);
@@ -674,7 +675,7 @@
             this.accountPicturePanel_Name.ForeColor = System.Drawing.Color.White;
             this.accountPicturePanel_Name.Location = new System.Drawing.Point(381, 265);
             this.accountPicturePanel_Name.Name = "accountPicturePanel_Name";
-            this.accountPicturePanel_Name.Size = new System.Drawing.Size(343, 57);
+            this.accountPicturePanel_Name.Size = new System.Drawing.Size(339, 52);
             this.accountPicturePanel_Name.TabIndex = 22;
             this.accountPicturePanel_Name.Text = "Robert J. Altman";
             // 
@@ -1153,9 +1154,13 @@
             this.arcadePanel_ReadyToStart.Text = "Ready to start?";
             this.arcadePanel_ReadyToStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // bgWriter
+            // 
+            this.bgWriter.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWriter_DoWork);
+            // 
             // NewAccount_New2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(87)))), ((int)(((byte)(143)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1288,5 +1293,6 @@
         private System.Windows.Forms.Button arcadePanel_Create;
         private System.Windows.Forms.Label arcadePanel_TheSuburbs;
         private System.Windows.Forms.Label arcadePanel_ReadyToStart;
+        private System.ComponentModel.BackgroundWorker bgWriter;
     }
 }

@@ -100,7 +100,7 @@ namespace ProjectSnowshoes
             newTSC.ForeColor = Color.Black;
             newTSC.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 9);
             newTSC.BringToFront();
-            newTSC.Text = "12:00 AM";
+            
             this.Controls.Add(newTSC);
 
             this.Invalidate();
@@ -262,6 +262,8 @@ namespace ProjectSnowshoes
                             //System.Diagnostics.Process.Start(theProcess.Modules[0].FileName);
                             ShowWindow(theProcess.MainWindowHandle, 5);
                             ShowWindow(theProcess.MainWindowHandle, 9);
+                            
+                            
                         };
                         hmGreatJobFantasticAmazing.MouseHover += (sender, args) =>
                         {

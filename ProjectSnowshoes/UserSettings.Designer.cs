@@ -271,6 +271,7 @@
             this.Controls.Add(this.accountName);
             this.Controls.Add(this.accountImg);
             this.Controls.Add(this.lockBack);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Roboto Light", 7.875F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserSettings";
