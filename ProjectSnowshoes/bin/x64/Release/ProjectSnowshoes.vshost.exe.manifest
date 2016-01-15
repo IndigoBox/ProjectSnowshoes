@@ -48,18 +48,22 @@
   <!-- Indicates that the application is DPI-aware and will not be automatically scaled by Windows at higher
        DPIs. Windows Presentation Foundation (WPF) applications are automatically DPI-aware and do not need 
        to opt in. Windows Forms applications targeting .NET Framework 4.6 that opt into this setting, should 
-       also set the 'EnableWindowsFormsHighDpiAutoResizing' setting to 'true' in their app.config. 
+       also set the 'EnableWindowsFormsHighDpiAutoResizing' setting to 'true' in their app.config. -->
   
   <application xmlns="urn:schemas-microsoft-com:asm.v3">
     <windowsSettings>
-      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">false</dpiAware>
     </windowsSettings>
   </application> 
   
-  Hi! Robert here. I learned that this is not a good time to work with this right now, and that The Bridge will continue to use the 
+  <!-- Hi! Robert here. I learned that this is not a good time to work with this right now, and that The Bridge will continue to use the 
   scaling techniques that I worked around in the past (aka, I'm not undoing the ultimately unnecessary patch, as it itself would be 
   unnecessary at this stage). When ProjectSnowshoes is cleaned and restarted after the release of The Bridge, things will start looking
   a bit prettier on screens that can show it off. I promise. 
+  
+  Wait, hold on, this might fix things with that odd render situation happening on some higher-DPI screens.
+  If you are seeing this, all is well.
+  
   -->
   
 
