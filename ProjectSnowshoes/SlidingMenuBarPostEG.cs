@@ -182,7 +182,10 @@ namespace ProjectSnowshoes
 
         private void lockImage_Click(object sender, EventArgs e)
         {
-
+            // Same exact code as seen in Space.cs, just with a better name used for the object.
+            ObviouslyTurnUpOnLogIn l = new ObviouslyTurnUpOnLogIn();
+            l.Show();
+            l.BringToFront();
         }
 
         private void perhapsIShouldJust_MouseLeave(object sender, EventArgs e)
