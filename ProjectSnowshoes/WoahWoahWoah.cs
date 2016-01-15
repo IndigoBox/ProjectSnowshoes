@@ -34,11 +34,11 @@ namespace ProjectSnowshoes
             int initLeft = goOnWithIt.Left;
             int theDistance = thisIsWhereThatGoes.Left - initLeft;
             Transition.run(goOnWithIt, "Left", goOnWithIt.Left, -317, new TransitionType_Linear(100));
-            Transition.run(goBack, "Left", goBack.Left, -317, new TransitionType_Linear(100));
+            Transition.run(goBack, "Top", goBack.Top, goBack.Top + 100, new TransitionType_Linear(100));
             Transition.run(thisIsWhereThatGoes, "Left", thisIsWhereThatGoes.Left, initLeft, new TransitionType_Linear(100));
             Transition.run(TheScienceIsRealButTheCheckmarksAreTheoretical, "Left", TheScienceIsRealButTheCheckmarksAreTheoretical.Left, 
                 TheScienceIsRealButTheCheckmarksAreTheoretical.Left - theDistance, new TransitionType_Linear(100));
-
+            goBack.Text = "Just kidding. Take me back!"; // In a project full of references and puns, why is this not named getBack?
         }
 
         private void TheScienceIsRealButTheCheckmarksAreTheoretical_Click(object sender, EventArgs e)
@@ -49,10 +49,10 @@ namespace ProjectSnowshoes
             {
                 surePlusName.Text = "Take care, " + Properties.Settings.Default.nickname[Properties.Settings.Default.whoIsThisCrazyDoge] + "!";
                 subCaption.Text = "Thanks for using Project Snowshoes. Hopefully we'll see you back some day!";
-
+                Transition.run(goBack, "Left", goBack.Left, -317, new TransitionType_Linear(100));
                 // Not actually, though! Some events need to happen here
 
-                
+
                 // Close other Snowshoes forms
                 for (int i = 1; i < Application.OpenForms.Count - 1; i++)
                 {

@@ -229,3 +229,4 @@ C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csproj.GenerateResource.Cache
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.exe
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.pdb
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csprojResolveAssemblyReference.cache
