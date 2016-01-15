@@ -51,6 +51,7 @@
             this.turnOffImage = new System.Windows.Forms.PictureBox();
             this.youYouSillyGooseDoge = new System.Windows.Forms.PictureBox();
             this.inTheaters = new System.Windows.Forms.Timer(this.components);
+            this.lockImage = new System.Windows.Forms.PictureBox();
             this.appsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appsImg)).BeginInit();
             this.docPanel.SuspendLayout();
@@ -62,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.settingsImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turnOffImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.youYouSillyGooseDoge)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lockImage)).BeginInit();
             this.SuspendLayout();
             // 
             // appsPanel
@@ -69,10 +71,10 @@
             this.appsPanel.BackColor = System.Drawing.Color.White;
             this.appsPanel.Controls.Add(this.appsText);
             this.appsPanel.Controls.Add(this.appsImg);
-            this.appsPanel.Location = new System.Drawing.Point(0, 334);
-            this.appsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.appsPanel.Location = new System.Drawing.Point(0, 642);
+            this.appsPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.appsPanel.Name = "appsPanel";
-            this.appsPanel.Size = new System.Drawing.Size(100, 65);
+            this.appsPanel.Size = new System.Drawing.Size(200, 125);
             this.appsPanel.TabIndex = 3;
             this.appsPanel.Click += new System.EventHandler(this.searchPanel_Click);
             this.appsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.appsPanel_Paint);
@@ -85,10 +87,10 @@
             this.appsText.AutoSize = true;
             this.appsText.Font = new System.Drawing.Font("Pacifico", 12.875F);
             this.appsText.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.appsText.Location = new System.Drawing.Point(25, 35);
-            this.appsText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.appsText.Location = new System.Drawing.Point(50, 67);
+            this.appsText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.appsText.Name = "appsText";
-            this.appsText.Size = new System.Drawing.Size(52, 31);
+            this.appsText.Size = new System.Drawing.Size(100, 62);
             this.appsText.TabIndex = 16;
             this.appsText.Text = "Apps";
             this.appsText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -100,10 +102,10 @@
             // 
             this.appsImg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.appsImg.Image = global::ProjectSnowshoes.Properties.Resources.AppsIco;
-            this.appsImg.Location = new System.Drawing.Point(38, 5);
-            this.appsImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.appsImg.Location = new System.Drawing.Point(76, 10);
+            this.appsImg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.appsImg.Name = "appsImg";
-            this.appsImg.Size = new System.Drawing.Size(25, 26);
+            this.appsImg.Size = new System.Drawing.Size(50, 50);
             this.appsImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.appsImg.TabIndex = 15;
             this.appsImg.TabStop = false;
@@ -118,10 +120,10 @@
             this.docPanel.Controls.Add(this.panel3);
             this.docPanel.Controls.Add(this.docImg);
             this.docPanel.Controls.Add(this.panel4);
-            this.docPanel.Location = new System.Drawing.Point(0, 269);
-            this.docPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.docPanel.Location = new System.Drawing.Point(0, 517);
+            this.docPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.docPanel.Name = "docPanel";
-            this.docPanel.Size = new System.Drawing.Size(100, 65);
+            this.docPanel.Size = new System.Drawing.Size(200, 125);
             this.docPanel.TabIndex = 4;
             this.docPanel.Click += new System.EventHandler(this.searchPanel_Click);
             this.docPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.docPanel_Paint);
@@ -134,10 +136,10 @@
             this.docText.AutoSize = true;
             this.docText.Font = new System.Drawing.Font("Pacifico", 12.875F);
             this.docText.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.docText.Location = new System.Drawing.Point(7, 35);
-            this.docText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.docText.Location = new System.Drawing.Point(14, 67);
+            this.docText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.docText.Name = "docText";
-            this.docText.Size = new System.Drawing.Size(89, 31);
+            this.docText.Size = new System.Drawing.Size(173, 62);
             this.docText.TabIndex = 14;
             this.docText.Text = "Documents";
             this.docText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -147,20 +149,20 @@
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(0, -132);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(0, -254);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(100, 65);
+            this.panel3.Size = new System.Drawing.Size(200, 125);
             this.panel3.TabIndex = 6;
             // 
             // docImg
             // 
             this.docImg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.docImg.Image = global::ProjectSnowshoes.Properties.Resources.DocsAgain2;
-            this.docImg.Location = new System.Drawing.Point(38, 5);
-            this.docImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.docImg.Location = new System.Drawing.Point(76, 10);
+            this.docImg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.docImg.Name = "docImg";
-            this.docImg.Size = new System.Drawing.Size(25, 26);
+            this.docImg.Size = new System.Drawing.Size(50, 50);
             this.docImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.docImg.TabIndex = 13;
             this.docImg.TabStop = false;
@@ -170,10 +172,10 @@
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(0, -67);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(0, -129);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(100, 65);
+            this.panel4.Size = new System.Drawing.Size(200, 125);
             this.panel4.TabIndex = 5;
             // 
             // picPanel
@@ -183,10 +185,10 @@
             this.picPanel.Controls.Add(this.panel6);
             this.picPanel.Controls.Add(this.picImg);
             this.picPanel.Controls.Add(this.panel7);
-            this.picPanel.Location = new System.Drawing.Point(0, 204);
-            this.picPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPanel.Location = new System.Drawing.Point(0, 392);
+            this.picPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picPanel.Name = "picPanel";
-            this.picPanel.Size = new System.Drawing.Size(100, 65);
+            this.picPanel.Size = new System.Drawing.Size(200, 125);
             this.picPanel.TabIndex = 7;
             this.picPanel.Click += new System.EventHandler(this.searchPanel_Click);
             this.picPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.picPanel_Paint);
@@ -199,10 +201,10 @@
             this.picText.AutoSize = true;
             this.picText.Font = new System.Drawing.Font("Pacifico", 12.875F);
             this.picText.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.picText.Location = new System.Drawing.Point(19, 35);
-            this.picText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.picText.Location = new System.Drawing.Point(38, 67);
+            this.picText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.picText.Name = "picText";
-            this.picText.Size = new System.Drawing.Size(65, 31);
+            this.picText.Size = new System.Drawing.Size(124, 62);
             this.picText.TabIndex = 12;
             this.picText.Text = "Images";
             this.picText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -212,20 +214,20 @@
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(0, -132);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Location = new System.Drawing.Point(0, -254);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(100, 65);
+            this.panel6.Size = new System.Drawing.Size(200, 125);
             this.panel6.TabIndex = 6;
             // 
             // picImg
             // 
             this.picImg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picImg.Image = global::ProjectSnowshoes.Properties.Resources.Images;
-            this.picImg.Location = new System.Drawing.Point(38, 5);
-            this.picImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picImg.Location = new System.Drawing.Point(76, 10);
+            this.picImg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picImg.Name = "picImg";
-            this.picImg.Size = new System.Drawing.Size(25, 26);
+            this.picImg.Size = new System.Drawing.Size(50, 50);
             this.picImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picImg.TabIndex = 11;
             this.picImg.TabStop = false;
@@ -235,10 +237,10 @@
             // 
             // panel7
             // 
-            this.panel7.Location = new System.Drawing.Point(0, -67);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Location = new System.Drawing.Point(0, -129);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(100, 65);
+            this.panel7.Size = new System.Drawing.Size(200, 125);
             this.panel7.TabIndex = 5;
             // 
             // searchPanel
@@ -248,10 +250,10 @@
             this.searchPanel.Controls.Add(this.searchImg);
             this.searchPanel.Controls.Add(this.panel9);
             this.searchPanel.Controls.Add(this.panel10);
-            this.searchPanel.Location = new System.Drawing.Point(0, 139);
-            this.searchPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchPanel.Location = new System.Drawing.Point(0, 267);
+            this.searchPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchPanel.Name = "searchPanel";
-            this.searchPanel.Size = new System.Drawing.Size(100, 65);
+            this.searchPanel.Size = new System.Drawing.Size(200, 125);
             this.searchPanel.TabIndex = 8;
             this.searchPanel.Click += new System.EventHandler(this.searchPanel_Click);
             this.searchPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.searchPanel_Paint);
@@ -264,10 +266,10 @@
             this.searchText.AutoSize = true;
             this.searchText.Font = new System.Drawing.Font("Pacifico", 12.875F);
             this.searchText.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.searchText.Location = new System.Drawing.Point(18, 35);
-            this.searchText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.searchText.Location = new System.Drawing.Point(36, 67);
+            this.searchText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.searchText.Name = "searchText";
-            this.searchText.Size = new System.Drawing.Size(67, 31);
+            this.searchText.Size = new System.Drawing.Size(131, 62);
             this.searchText.TabIndex = 10;
             this.searchText.Text = "Search";
             this.searchText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -279,10 +281,10 @@
             // 
             this.searchImg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchImg.Image = global::ProjectSnowshoes.Properties.Resources.Search1;
-            this.searchImg.Location = new System.Drawing.Point(38, 5);
-            this.searchImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchImg.Location = new System.Drawing.Point(76, 10);
+            this.searchImg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchImg.Name = "searchImg";
-            this.searchImg.Size = new System.Drawing.Size(25, 26);
+            this.searchImg.Size = new System.Drawing.Size(50, 50);
             this.searchImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.searchImg.TabIndex = 9;
             this.searchImg.TabStop = false;
@@ -292,28 +294,28 @@
             // 
             // panel9
             // 
-            this.panel9.Location = new System.Drawing.Point(0, -132);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Location = new System.Drawing.Point(0, -254);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(100, 65);
+            this.panel9.Size = new System.Drawing.Size(200, 125);
             this.panel9.TabIndex = 6;
             // 
             // panel10
             // 
-            this.panel10.Location = new System.Drawing.Point(0, -67);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Location = new System.Drawing.Point(0, -129);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(100, 65);
+            this.panel10.Size = new System.Drawing.Size(200, 125);
             this.panel10.TabIndex = 5;
             // 
             // settingsImage
             // 
             this.settingsImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsImage.Image = global::ProjectSnowshoes.Properties.Resources.GearSmallAww;
-            this.settingsImage.Location = new System.Drawing.Point(69, 107);
-            this.settingsImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsImage.Location = new System.Drawing.Point(138, 206);
+            this.settingsImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.settingsImage.Name = "settingsImage";
-            this.settingsImage.Size = new System.Drawing.Size(25, 26);
+            this.settingsImage.Size = new System.Drawing.Size(50, 50);
             this.settingsImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.settingsImage.TabIndex = 2;
             this.settingsImage.TabStop = false;
@@ -322,10 +324,10 @@
             // turnOffImage
             // 
             this.turnOffImage.Image = global::ProjectSnowshoes.Properties.Resources.XIco;
-            this.turnOffImage.Location = new System.Drawing.Point(6, 107);
-            this.turnOffImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.turnOffImage.Location = new System.Drawing.Point(12, 206);
+            this.turnOffImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.turnOffImage.Name = "turnOffImage";
-            this.turnOffImage.Size = new System.Drawing.Size(25, 26);
+            this.turnOffImage.Size = new System.Drawing.Size(50, 50);
             this.turnOffImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.turnOffImage.TabIndex = 1;
             this.turnOffImage.TabStop = false;
@@ -337,9 +339,9 @@
             this.youYouSillyGooseDoge.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.the_bridge_4e802407b8b80_1_;
             this.youYouSillyGooseDoge.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.youYouSillyGooseDoge.Location = new System.Drawing.Point(0, 0);
-            this.youYouSillyGooseDoge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.youYouSillyGooseDoge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.youYouSillyGooseDoge.Name = "youYouSillyGooseDoge";
-            this.youYouSillyGooseDoge.Size = new System.Drawing.Size(100, 104);
+            this.youYouSillyGooseDoge.Size = new System.Drawing.Size(200, 200);
             this.youYouSillyGooseDoge.TabIndex = 0;
             this.youYouSillyGooseDoge.TabStop = false;
             // 
@@ -349,12 +351,25 @@
             this.inTheaters.Interval = 1;
             this.inTheaters.Tick += new System.EventHandler(this.inTheaters_Tick);
             // 
+            // lockImage
+            // 
+            this.lockImage.Image = global::ProjectSnowshoes.Properties.Resources.XIco;
+            this.lockImage.Location = new System.Drawing.Point(76, 206);
+            this.lockImage.Margin = new System.Windows.Forms.Padding(4);
+            this.lockImage.Name = "lockImage";
+            this.lockImage.Size = new System.Drawing.Size(50, 50);
+            this.lockImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lockImage.TabIndex = 9;
+            this.lockImage.TabStop = false;
+            this.lockImage.Click += new System.EventHandler(this.lockImage_Click);
+            // 
             // SlidingMenuBarPostEG
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(100, 399);
+            this.ClientSize = new System.Drawing.Size(200, 767);
+            this.Controls.Add(this.lockImage);
             this.Controls.Add(this.searchPanel);
             this.Controls.Add(this.picPanel);
             this.Controls.Add(this.docPanel);
@@ -363,7 +378,7 @@
             this.Controls.Add(this.turnOffImage);
             this.Controls.Add(this.youYouSillyGooseDoge);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SlidingMenuBarPostEG";
             this.Text = "SlidingMenuBarPostEG";
             this.Load += new System.EventHandler(this.SlidingMenuBarPostEG_Load);
@@ -382,6 +397,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.settingsImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turnOffImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.youYouSillyGooseDoge)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lockImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -410,5 +426,6 @@
         private System.Windows.Forms.Label searchText;
         private System.Windows.Forms.PictureBox searchImg;
         private System.Windows.Forms.Timer inTheaters;
+        private System.Windows.Forms.PictureBox lockImage;
     }
 }

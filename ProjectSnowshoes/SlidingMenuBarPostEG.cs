@@ -39,6 +39,7 @@ namespace ProjectSnowshoes
 
             settingsImage.Top = 155;
             turnOffImage.Top = 155;
+            lockImage.Top = 155;
 
             /*appsPanel.Top = this.Height - 125;
             docPanel.Top = this.Height - 250;
@@ -59,31 +60,35 @@ namespace ProjectSnowshoes
             picText.ForeColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
             searchText.ForeColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
 
-            ImageFactory moveThatTint = new ImageFactory();
-            moveThatTint.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\XIco.png");
-            moveThatTint.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
-            turnOffImage.Image = moveThatTint.Image;
+            ImageFactory tintItGood = new ImageFactory();
+            tintItGood.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\XIco.png");
+            tintItGood.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
+            turnOffImage.Image = tintItGood.Image;
             
 
-            moveThatTint.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\AppsIco.png");
-            moveThatTint.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
-            appsImg.Image = j = moveThatTint.Image;
+            tintItGood.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\AppsIco.png");
+            tintItGood.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
+            appsImg.Image = j = tintItGood.Image;
 
-            moveThatTint.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\DocsAgain.png");
-            moveThatTint.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
-            docImg.Image = k = moveThatTint.Image;
+            tintItGood.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\DocsAgain.png");
+            tintItGood.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
+            docImg.Image = k = tintItGood.Image;
 
-            moveThatTint.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\Images.png");
-            moveThatTint.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
-            picImg.Image = l = moveThatTint.Image;
+            tintItGood.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\Images.png");
+            tintItGood.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
+            picImg.Image = l = tintItGood.Image;
 
-            moveThatTint.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\Search.png");
-            moveThatTint.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
-            searchImg.Image = m = moveThatTint.Image;
+            tintItGood.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\Search.png");
+            tintItGood.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
+            searchImg.Image = m = tintItGood.Image;
 
-            moveThatTint.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\GearSmallAww.png");
-            moveThatTint.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
-            settingsImage.Image = moveThatTint.Image;
+            tintItGood.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\GearSmallAww.png");
+            tintItGood.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
+            settingsImage.Image = tintItGood.Image;
+
+            tintItGood.Load(@"C:\ProjectSnowshoes\System\Media\SlidingMenuBar\Lock.png");
+            tintItGood.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
+            lockImage.Image = tintItGood.Image;
 
             this.Left = 0;
             const int AW_SLIDE = 0X40000;
@@ -173,6 +178,11 @@ namespace ProjectSnowshoes
                     this.Close();
                 }
             }
+        }
+
+        private void lockImage_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void perhapsIShouldJust_MouseLeave(object sender, EventArgs e)
