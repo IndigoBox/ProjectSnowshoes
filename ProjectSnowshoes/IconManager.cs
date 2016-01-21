@@ -89,12 +89,7 @@ namespace ProjectSnowshoes
 
         public Image getAlbumArtwork(string pathMusics, string fileExt)
         {
-            if (0 == 1)
-            {
-                return Properties.Resources.TheOpacityIsAlmostReal;
-            }
-            else
-            {
+                //Originally here, but unreachable: return Properties.Resources.TheOpacityIsAlmostReal;
                 if (fileExt == "wav")
                 {
                     return Image.FromFile(@"C:\ProjectSnowshoes\System\Media\Icons\Player\Wav.png");
@@ -106,7 +101,6 @@ namespace ProjectSnowshoes
                 else {
                     return Icon.ExtractAssociatedIcon(pathMusics).ToBitmap();
                 }
-            }
         }
 
 

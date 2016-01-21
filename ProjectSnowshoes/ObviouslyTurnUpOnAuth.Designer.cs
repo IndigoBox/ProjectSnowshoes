@@ -50,8 +50,9 @@
             this.panel1.Controls.Add(this.accountImg);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(966, 568);
+            this.panel1.Size = new System.Drawing.Size(1932, 1092);
             this.panel1.TabIndex = 7;
             // 
             // pwdWarning
@@ -61,9 +62,10 @@
             this.pwdWarning.BackColor = System.Drawing.Color.Transparent;
             this.pwdWarning.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Italic);
             this.pwdWarning.ForeColor = System.Drawing.Color.White;
-            this.pwdWarning.Location = new System.Drawing.Point(309, 335);
+            this.pwdWarning.Location = new System.Drawing.Point(618, 644);
+            this.pwdWarning.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.pwdWarning.Name = "pwdWarning";
-            this.pwdWarning.Size = new System.Drawing.Size(300, 19);
+            this.pwdWarning.Size = new System.Drawing.Size(589, 38);
             this.pwdWarning.TabIndex = 11;
             this.pwdWarning.Text = "The lock won\'t budge. Try something else.";
             this.pwdWarning.Visible = false;
@@ -77,9 +79,10 @@
             this.enterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.enterButton.Font = new System.Drawing.Font("Roboto Light", 12.25F);
             this.enterButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.enterButton.Location = new System.Drawing.Point(771, 286);
+            this.enterButton.Location = new System.Drawing.Point(1542, 550);
+            this.enterButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.enterButton.Name = "enterButton";
-            this.enterButton.Size = new System.Drawing.Size(98, 36);
+            this.enterButton.Size = new System.Drawing.Size(196, 69);
             this.enterButton.TabIndex = 10;
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = false;
@@ -89,10 +92,11 @@
             // 
             this.weKnowWhatThisIs.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.weKnowWhatThisIs.Font = new System.Drawing.Font("Roboto", 16.25F);
-            this.weKnowWhatThisIs.Location = new System.Drawing.Point(313, 286);
+            this.weKnowWhatThisIs.Location = new System.Drawing.Point(626, 550);
+            this.weKnowWhatThisIs.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.weKnowWhatThisIs.Name = "weKnowWhatThisIs";
             this.weKnowWhatThisIs.PasswordChar = '•';
-            this.weKnowWhatThisIs.Size = new System.Drawing.Size(442, 34);
+            this.weKnowWhatThisIs.Size = new System.Drawing.Size(880, 60);
             this.weKnowWhatThisIs.TabIndex = 9;
             this.weKnowWhatThisIs.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.weKnowWhatThisIs_KeyPress);
             // 
@@ -103,9 +107,10 @@
             this.accountName.BackColor = System.Drawing.Color.Transparent;
             this.accountName.Font = new System.Drawing.Font("Roboto Light", 32.25F);
             this.accountName.ForeColor = System.Drawing.Color.White;
-            this.accountName.Location = new System.Drawing.Point(303, 212);
+            this.accountName.Location = new System.Drawing.Point(606, 408);
+            this.accountName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.accountName.Name = "accountName";
-            this.accountName.Size = new System.Drawing.Size(315, 52);
+            this.accountName.Size = new System.Drawing.Size(630, 104);
             this.accountName.TabIndex = 8;
             this.accountName.Text = "Turnt Up Doges";
             // 
@@ -114,24 +119,27 @@
             this.accountImg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.accountImg.BackgroundImage = global::ProjectSnowshoes.Properties.Resources._50pertrans_gray;
             this.accountImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.accountImg.Location = new System.Drawing.Point(97, 184);
+            this.accountImg.Location = new System.Drawing.Point(194, 354);
+            this.accountImg.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.accountImg.Name = "accountImg";
-            this.accountImg.Size = new System.Drawing.Size(200, 200);
+            this.accountImg.Size = new System.Drawing.Size(400, 385);
             this.accountImg.TabIndex = 7;
             this.accountImg.TabStop = false;
             // 
             // ObviouslyTurnUpOnAuth
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.img104;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(966, 568);
+            this.ClientSize = new System.Drawing.Size(1932, 1092);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "ObviouslyTurnUpOnAuth";
             this.Text = "ObviouslyTurnUpOnAuth";
+            this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.DeepPink;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ObviouslyTurnUpOnAuth_Load);

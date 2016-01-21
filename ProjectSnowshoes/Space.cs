@@ -706,7 +706,8 @@ namespace ProjectSnowshoes
                 String fiInfStillWIthExt = fiInfStr;
                 fiInfStr = fiInfStr.Split('.')[0];
 
-                if (fiInfStillWIthExt != "desktop.ini")
+                // if (fiInfStillWIthExt != "desktop.ini" || 
+                if ((fiInf.Attributes & FileAttributes.Hidden) != FileAttributes.Hidden)
                 {
 
                     String panelname = "app" + i;

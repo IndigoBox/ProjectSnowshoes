@@ -58,7 +58,7 @@
             this.timeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.timeLabel.BackColor = System.Drawing.Color.Transparent;
             this.timeLabel.Font = new System.Drawing.Font("Roboto Light", 36.75F);
-            this.timeLabel.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.timeLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.timeLabel.Location = new System.Drawing.Point(117, 290);
             this.timeLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.timeLabel.Name = "timeLabel";
@@ -121,8 +121,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.LoginBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 768);
