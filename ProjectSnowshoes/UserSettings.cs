@@ -66,7 +66,7 @@ namespace ProjectSnowshoes
 
 
             ImageFactory guessWhosBack = new ImageFactory();
-            guessWhosBack.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\PersonsOfScience.png");
+            guessWhosBack.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\PersonOfScience.png");
             guessWhosBack.Tint(theColorWow);
             accInfo_img.BackgroundImage = guessWhosBack.Image;
 
@@ -92,7 +92,7 @@ namespace ProjectSnowshoes
         private void accountInfoItems_Hover(object sender, EventArgs e)
         {
             accInfo.BackColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
-            accInfo_img.BackgroundImage = Image.FromFile(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\PersonsOfScience.png");
+            accInfo_img.BackgroundImage = Image.FromFile(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\PersonOfScience.png");
             accInfo_text.ForeColor = Color.White;
         }
 
@@ -114,7 +114,7 @@ namespace ProjectSnowshoes
         {
             accInfo.BackColor = Color.Transparent;
             ImageFactory guessWhosBackA = new ImageFactory();
-            guessWhosBackA.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\PersonsOfScience.png");
+            guessWhosBackA.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\PersonOfScience.png");
             guessWhosBackA.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
             accInfo_img.BackgroundImage = guessWhosBackA.Image;
             accInfo_text.ForeColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
