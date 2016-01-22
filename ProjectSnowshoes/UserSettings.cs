@@ -70,11 +70,11 @@ namespace ProjectSnowshoes
             guessWhosBack.Tint(theColorWow);
             accInfo_img.BackgroundImage = guessWhosBack.Image;
 
-            guessWhosBack.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\WooooooooooooooooooooooooooooooooooooooDoges.png");
+            guessWhosBack.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\Solar.png");
             guessWhosBack.Tint(theColorWow);
             space_img.BackgroundImage = guessWhosBack.Image;
 
-            guessWhosBack.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\LookAtDat.png");
+            guessWhosBack.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\MorePeople.png");
             guessWhosBack.Tint(theColorWow);
             otherAcc_img.BackgroundImage = guessWhosBack.Image;
 
@@ -99,14 +99,14 @@ namespace ProjectSnowshoes
         private void spaceItems_Hover (object sender, EventArgs e)
         {
             space.BackColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
-            space_img.BackgroundImage = Image.FromFile(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\WooooooooooooooooooooooooooooooooooooooDoges.png");
+            space_img.BackgroundImage = Image.FromFile(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\Solar.png");
             space_text.ForeColor = Color.White;
         }
 
         private void otherAccItems_Hover(object sender, EventArgs e)
         {
             otherAcc.BackColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
-            otherAcc_img.BackgroundImage = Image.FromFile(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\LookAtDat.png");
+            otherAcc_img.BackgroundImage = Image.FromFile(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\MorePeople.png");
             otherAcc_text.ForeColor = Color.White;
         }
 
@@ -124,7 +124,7 @@ namespace ProjectSnowshoes
         {
             space.BackColor = Color.Transparent;
             ImageFactory guessWhosBackA = new ImageFactory();
-            guessWhosBackA.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\WooooooooooooooooooooooooooooooooooooooDoges.png");
+            guessWhosBackA.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\Solar.png");
             guessWhosBackA.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
             space_img.BackgroundImage = guessWhosBackA.Image;
             space_text.ForeColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
@@ -134,7 +134,7 @@ namespace ProjectSnowshoes
         {
             otherAcc.BackColor = Color.Transparent;
             ImageFactory guessWhosBackA = new ImageFactory();
-            guessWhosBackA.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\LookAtDat.png");
+            guessWhosBackA.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\MorePeople.png");
             guessWhosBackA.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
             otherAcc_img.BackgroundImage = guessWhosBackA.Image;
             otherAcc_text.ForeColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
