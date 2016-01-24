@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -29,7 +30,6 @@ namespace ProjectSnowshoes
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
 
 
             /* When the color gets out of control again, remove this and the ending comment here.

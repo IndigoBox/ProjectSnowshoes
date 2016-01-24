@@ -35,6 +35,8 @@ namespace ProjectSnowshoes
             //Application.Run(new LockScreen_TrueColors_V2());
 
             // Guess what's back again!
+            
+
             if (Properties.Settings.Default.username.Count != 0)
             {
                 if (!System.IO.Directory.Exists(@"C:\ProjectSnowshoes\User\" + Properties.Settings.Default.username[0]))

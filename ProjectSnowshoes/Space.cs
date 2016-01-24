@@ -735,7 +735,7 @@ namespace ProjectSnowshoes
 
                     IconManager areYouForRealRightNowLikeReallyRealVSWow = new IconManager();
                     app1.BackColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
-                    app1.BackgroundImage = Properties.Resources._20pertrans_lighterGray;
+                    //app1.BackgroundImage = Properties.Resources._20pertrans_lighterGray;
                     turnip.BackgroundImage = areYouForRealRightNowLikeReallyRealVSWow.icoExtReturner(fiInf.FullName, fiInfStr, true);
 
                     DoubleBufferManipulation.SetDoubleBuffered(turnip);
