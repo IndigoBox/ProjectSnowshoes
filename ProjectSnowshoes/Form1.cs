@@ -132,12 +132,17 @@ namespace ProjectSnowshoes
 
         private void Form1_KeyDown (object sender, KeyEventArgs e)
         {
+            proceedToUsers();
+        }
+
+        private void proceedToUsers()
+        {
             // Edited 9252014 1200hrs (exactly to the minute)
             // Replaced Login with ObviouslyTurnUpOnAuth
 
             // Edited again 10142014 1535hrs
             // Replaced ObviouslyTurnUpOnAuth with MultipleUsersMain
-            
+
             MultipleUsersMain loginform = new MultipleUsersMain();
             loginform.Show();
             loginform.BringToFront();
@@ -156,6 +161,11 @@ namespace ProjectSnowshoes
 
             // User32 and StackOverflow persons, you da real MVPs.
             AnimateWindow(this.Handle, 300, AW_SLIDE | AW_HOR_POSITIVE);
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            proceedToUsers();
         }
     }
 }
