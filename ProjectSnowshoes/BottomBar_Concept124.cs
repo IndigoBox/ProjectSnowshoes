@@ -201,7 +201,7 @@ namespace ProjectSnowshoes
                 {
                     if (procCount != 0 && procCount != 4) { 
                             PictureBox hmGreatJobFantasticAmazing = new PictureBox();
-                            if (theProcess.MainWindowTitle != "" && theProcess.Modules[0].FileName != "ProjectSnowshoes.exe")
+                            if ((theProcess.MainWindowTitle != "" && theProcess.Modules[0].FileName != "ProjectSnowshoes.exe") && theProcess.MainWindowHandle != null)
                             {
                                 //hmGreatJobFantasticAmazing.Text = theProcess.MainWindowTitle;
                                 hmGreatJobFantasticAmazing.Margin = new Padding(6, 0, 6, 0);

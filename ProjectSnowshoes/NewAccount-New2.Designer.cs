@@ -1187,6 +1187,7 @@
             this.Text = "NewAccount_New2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.NewAccount_New2_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NewAccount_New2_KeyDown);
             this.about1Panel1.ResumeLayout(false);
             this.about1Panel1.PerformLayout();
             this.passwordPanel_2.ResumeLayout(false);

@@ -34,6 +34,8 @@ namespace ProjectSnowshoes
         int spaceGuide, milesToGoBeforeISleep;
 
         
+
+        
         public NewAccount_New2()
         {
             InitializeComponent();
@@ -762,6 +764,17 @@ namespace ProjectSnowshoes
             }
         }
 
+        private void NewAccount_New2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Return)
+            {
+                if (step5.BackColor == Color.White)
+                {
+                    finishSetup(); // If at last step, call to finish setup.
+                }
+            }
+        }
+
         private void mayfieldPanel_Images_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog spacefbd = new FolderBrowserDialog();
@@ -804,6 +817,11 @@ namespace ProjectSnowshoes
 
         private void arcadePanel_Create_Click(object sender, EventArgs e)
         {
+            finishSetup();
+        }
+
+        private void finishSetup()
+        { 
             // Well, here we are!
 
             // Let's start off with some of the settings the user had no idea about (evil laugh)
