@@ -39,6 +39,8 @@ namespace ProjectSnowshoes
 
             if (Properties.Settings.Default.username.Count != 0)
             {
+                // Checks to see if the first user listed still has files existing (avoids crash that creates unresponsive Snowshoes that is TopMost over every Windows...window).
+                // If not, we remove all the users and treat this as if the program is launched for the first time.
                 if (!System.IO.Directory.Exists(@"C:\ProjectSnowshoes\User\" + Properties.Settings.Default.username[0]))
                 {
                     

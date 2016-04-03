@@ -284,6 +284,12 @@
     <Compile Include="ObviouslyTurnUpOnLogIn.Designer.cs">
       <DependentUpon>ObviouslyTurnUpOnLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="OtherAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherAcc.Designer.cs">
+      <DependentUpon>OtherAcc.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrelimSetup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -432,6 +438,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ObviouslyTurnUpOnLogIn.resx">
       <DependentUpon>ObviouslyTurnUpOnLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherAcc.resx">
+      <DependentUpon>OtherAcc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrelimSetup.resx">
       <DependentUpon>PrelimSetup.cs</DependentUpon>
