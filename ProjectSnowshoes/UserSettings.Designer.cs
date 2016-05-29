@@ -159,6 +159,7 @@
             this.otherAcc.Name = "otherAcc";
             this.otherAcc.Size = new System.Drawing.Size(150, 150);
             this.otherAcc.TabIndex = 8;
+            this.otherAcc.Click += new System.EventHandler(this.otherAcc_text_Click);
             this.otherAcc.MouseLeave += new System.EventHandler(this.otherAccItems_MouseLeave);
             this.otherAcc.MouseHover += new System.EventHandler(this.otherAccItems_Hover);
             // 
@@ -171,6 +172,7 @@
             this.otherAcc_text.TabIndex = 7;
             this.otherAcc_text.Text = "Other Accounts";
             this.otherAcc_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.otherAcc_text.Click += new System.EventHandler(this.otherAcc_text_Click);
             this.otherAcc_text.MouseLeave += new System.EventHandler(this.otherAccItems_MouseLeave);
             this.otherAcc_text.MouseHover += new System.EventHandler(this.otherAccItems_Hover);
             // 
@@ -183,6 +185,7 @@
             this.otherAcc_img.Size = new System.Drawing.Size(60, 60);
             this.otherAcc_img.TabIndex = 7;
             this.otherAcc_img.TabStop = false;
+            this.otherAcc_img.Click += new System.EventHandler(this.otherAcc_img_Click);
             this.otherAcc_img.MouseLeave += new System.EventHandler(this.otherAccItems_MouseLeave);
             this.otherAcc_img.MouseHover += new System.EventHandler(this.otherAccItems_Hover);
             // 

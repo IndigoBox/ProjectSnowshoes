@@ -32,7 +32,7 @@
             this.retreat = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.userList = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,21 +80,21 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(559, 370);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
-            // flowLayoutPanel2
+            // userList
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 40);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(571, 417);
-            this.flowLayoutPanel2.TabIndex = 3;
+            this.userList.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.userList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.userList.Location = new System.Drawing.Point(0, 40);
+            this.userList.Name = "userList";
+            this.userList.Size = new System.Drawing.Size(571, 417);
+            this.userList.TabIndex = 3;
             // 
             // OtherAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 457);
-            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.userList);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -112,6 +112,6 @@
         private System.Windows.Forms.Button retreat;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel userList;
     }
 }

@@ -179,15 +179,23 @@ namespace ProjectSnowshoes
             NewAccount_New1 newPM = new NewAccount_New1();
             newPM.Show();
             newPM.BringToFront();
-
-
-            // Start closing other items
-
-            
+            // Start closing other items            
             this.Close();
 
+        }
 
+        private void otherAcc_img_Click(object sender, EventArgs e)
+        {
+            OtherAcc oacc = new OtherAcc();
+            oacc.Show();
+            oacc.BringToFront();
+        }
 
+        private void otherAcc_text_Click(object sender, EventArgs e)
+        {
+            OtherAcc oacc = new OtherAcc();
+            oacc.Show();
+            oacc.BringToFront();
         }
 
         private void button2_Click(object sender, EventArgs e)
