@@ -38,16 +38,14 @@ namespace ProjectSnowshoes
             for (int i = 0; i < Properties.Settings.Default.username.Count; i++)
             {
 
-                /*  The following has not been edited fully from the Documents.cs file, so please don't treat as actually working 
-                
-                Disregard: this works now. */
+           
                 Panel uA = new Panel();
                 uA.Show();
-                uA.BackColor = Color.Transparent;
+                uA.BackColor = Color.White;
                 uA.Left = 0;
                 uA.Width = this.Width;
                 uA.Height = 50;
-                uA.Margin = new Padding(0, 5, 0, 0);
+                uA.Margin = new Padding(0, 2, 0, 0);
                 
                 userList.Controls.Add(uA);
 
@@ -57,6 +55,8 @@ namespace ProjectSnowshoes
                 pImg.Width = 50;
                 pImg.Height = 50;
                 pImg.Dock = DockStyle.Left;
+                pImg.BackColor = Color.White;
+                pImg.SizeMode = PictureBoxSizeMode.Zoom;
                 
                 Label turnip = new Label();
                 turnip.Show();
@@ -90,9 +90,26 @@ namespace ProjectSnowshoes
 
                 dl.FlatStyle = FlatStyle.Flat;
                 dl.FlatAppearance.BorderSize = 0;
-
-
+                
                 uA.Controls.Add(dl);
+
+                // Shhhhhhhhhhh hidden controls
+
+                Label toDel = new Label();
+
+                toDel.Show();
+                toDel.BackColor = Color.Transparent;
+                toDel.AutoEllipsis = true;
+                toDel.Left = 64;
+                toDel.Width = this.Width - 64 - 50;
+                toDel.Height = 14;
+                toDel.Top = 50;
+                toDel.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 11);
+                toDel.ForeColor = Color.Red;
+                toDel.TextAlign = ContentAlignment.MiddleLeft;
+                toDel.Text = "Enter the account password to delete it:";
+
+                uA.Controls.Add(toDel);
 
 
                 /* Need this for event usage later
@@ -112,10 +129,25 @@ namespace ProjectSnowshoes
                     System.Diagnostics.Process.Start(fiInf.FullName);
                 }; */
 
+                uA.Click += (sender, args) =>
+                {
+                    if (uA.Height != 90)
+                    {
+                        uA.Height = 90;
+                    }
+                    else
+                    {
+                        uA.Height = 50;
+                    }
+                };
+
             }
         }
 
-        
+        public void goBackJack()
+        {
+
+        }
 
         
     }
