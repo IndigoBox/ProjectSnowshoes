@@ -39,15 +39,15 @@ namespace ProjectSnowshoes
             {
 
                 /*  The following has not been edited fully from the Documents.cs file, so please don't treat as actually working 
-
-                (This part, with Button uA, has received some modifications.) */
+                
+                Disregard: this works now. */
                 Panel uA = new Panel();
                 uA.Show();
                 uA.BackColor = Color.Transparent;
                 uA.Left = 0;
                 uA.Width = this.Width;
                 uA.Height = 50;
-                uA.Margin = new Padding(0);
+                uA.Margin = new Padding(0, 5, 0, 0);
                 
                 userList.Controls.Add(uA);
 
@@ -63,7 +63,7 @@ namespace ProjectSnowshoes
                 turnip.BackColor = Color.Transparent;
                 turnip.AutoEllipsis = true;
                 turnip.Left = 64;
-                turnip.Width = this.Width - 64;
+                turnip.Width = this.Width - 64 - 50;
                 turnip.Height = 50;
                 turnip.Top = 0;
                 turnip.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 11);
@@ -73,6 +73,26 @@ namespace ProjectSnowshoes
 
                 uA.Controls.Add(pImg);
                 uA.Controls.Add(turnip);
+
+                Button dl = new Button();
+                dl.Show();
+                dl.BackColor = Color.Firebrick;
+                
+                dl.Width = 50;
+                dl.Left = uA.Width - 50;
+                dl.Height = 50;
+                dl.Dock = DockStyle.Right;
+
+                dl.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 11);
+                dl.ForeColor = Color.White;
+                dl.TextAlign = ContentAlignment.MiddleCenter;
+                dl.Text = "X";
+
+                dl.FlatStyle = FlatStyle.Flat;
+                dl.FlatAppearance.BorderSize = 0;
+
+
+                uA.Controls.Add(dl);
 
 
                 /* Need this for event usage later
