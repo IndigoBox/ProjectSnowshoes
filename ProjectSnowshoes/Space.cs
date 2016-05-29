@@ -62,6 +62,8 @@ namespace ProjectSnowshoes
         private void Space_Load(object sender, EventArgs e)
         {
             
+            try { 
+            
             // Set size of elements based on screen resolution 
 
             goFixTheResYas();
@@ -156,6 +158,17 @@ namespace ProjectSnowshoes
 
             BackgroundFunctionManager bfm = new BackgroundFunctionManager();
             bfm.Show();
+            }
+            catch (Exception ex)
+            {
+                TheScreenIsBlue tsib = new TheScreenIsBlue(ex.HResult + ": " + ex.Message);
+                tsib.Show();
+                tsib.BringToFront();
+                
+                this.Close();
+
+
+            }
 
         }
 

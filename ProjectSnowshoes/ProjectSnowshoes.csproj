@@ -337,6 +337,12 @@
     <Compile Include="ThereAreFontsInteresting.Designer.cs">
       <DependentUpon>ThereAreFontsInteresting.cs</DependentUpon>
     </Compile>
+    <Compile Include="TheScreenIsBlue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheScreenIsBlue.Designer.cs">
+      <DependentUpon>TheScreenIsBlue.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThisMayFixTransparency.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -469,6 +475,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThanksScn9A.resx">
       <DependentUpon>ThanksScn9A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheScreenIsBlue.resx">
+      <DependentUpon>TheScreenIsBlue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThisMayFixTransparency.resx">
       <DependentUpon>ThisMayFixTransparency.cs</DependentUpon>
@@ -765,6 +774,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PS.ico" />
+    <None Include="Resources\SegoeUIEmoji-Tongue.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

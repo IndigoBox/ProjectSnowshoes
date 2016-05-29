@@ -139,8 +139,11 @@
   <data name="Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Picture Sample 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Picture Sample 4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SomeSpace1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomeSpace1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spaaaaaaaaaaaaaaaaaace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spaaaaaaaaaaaaaaaaaace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TryAnotherBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TryAnotherBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -168,9 +171,6 @@
   </data>
   <data name="blackBackSearch1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blackBackSearch1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Middle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Middle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhoAreYou1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhoAreYou1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,17 +238,17 @@
   <data name="PlusOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PlusOne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DocsAgain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocsAgain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Marble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TheOpacityIsAlmostReal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TheOpacityIsAlmostReal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itsadogelikeomgman" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itsadogelikeomgman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Spaaaaaaaaaaaaaaaaaace" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Spaaaaaaaaaaaaaaaaaace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Styx_-_Paradise_Theater[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Styx_-_Paradise_Theater[1].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NewNote" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NewNote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -267,6 +267,9 @@
   </data>
   <data name="XWow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\XWow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Picture Sample 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Picture Sample 4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TryIt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TryIt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,6 +301,9 @@
   <data name="wow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SomeSpace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SomeSpace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DefaultIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -319,8 +325,8 @@
   <data name="img104" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img104.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Styx_-_Paradise_Theater[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Styx_-_Paradise_Theater[1].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Middle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Middle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,13 +340,10 @@
   <data name="WhoAreYou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhoAreYou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DocsAgain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DocsAgain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TheOpacityIsAlmostReal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TheOpacityIsAlmostReal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SomeSpace" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SomeSpace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SomeSpace1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SomeSpace1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SegoeUIEmoji-Tongue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SegoeUIEmoji-Tongue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
