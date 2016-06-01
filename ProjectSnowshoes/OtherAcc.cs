@@ -102,12 +102,12 @@ namespace ProjectSnowshoes
                 toDel.AutoEllipsis = true;
                 toDel.Left = 64;
                 toDel.Width = this.Width - 64 - 50;
-                toDel.Height = 14;
+                toDel.Height = 18;
                 toDel.Top = 50;
                 toDel.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 11);
                 toDel.ForeColor = Color.Red;
                 toDel.TextAlign = ContentAlignment.MiddleLeft;
-                toDel.Text = "To delete the account, enter a password:";
+                toDel.Text = "To delete this account, enter the password:";
 
                 uA.Controls.Add(toDel);
 
@@ -115,12 +115,13 @@ namespace ProjectSnowshoes
                 pBox.Show();
                 pBox.BackColor = Color.White;
                 pBox.Left = 64;
-                pBox.Width = this.Width - 64 - 50;
-                pBox.Height = 14;
-                pBox.Top = 50;
+                pBox.Width = this.Width - 64 - 60;
+                pBox.Top = 76;
                 pBox.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 11);
-                pBox.ForeColor = Color.Red;
-                pBox.PasswordChar = '·';
+                pBox.ForeColor = Color.Black;
+                pBox.PasswordChar = '•';
+                pBox.BorderStyle = BorderStyle.FixedSingle;
+                uA.Controls.Add(pBox);
 
 
                 /* Need this for event usage later
@@ -142,9 +143,9 @@ namespace ProjectSnowshoes
 
                 dl.Click += (sender, args) =>
                 {
-                    if (uA.Height != 90)
+                    if (uA.Height != 110)
                     {
-                        uA.Height = 90;
+                        uA.Height = 110;
                     }
                     else
                     {
