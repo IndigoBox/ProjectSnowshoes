@@ -107,9 +107,20 @@ namespace ProjectSnowshoes
                 toDel.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 11);
                 toDel.ForeColor = Color.Red;
                 toDel.TextAlign = ContentAlignment.MiddleLeft;
-                toDel.Text = "Enter the account password to delete it:";
+                toDel.Text = "To delete the account, enter a password:";
 
                 uA.Controls.Add(toDel);
+
+                TextBox pBox = new TextBox();
+                pBox.Show();
+                pBox.BackColor = Color.White;
+                pBox.Left = 64;
+                pBox.Width = this.Width - 64 - 50;
+                pBox.Height = 14;
+                pBox.Top = 50;
+                pBox.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 11);
+                pBox.ForeColor = Color.Red;
+                pBox.PasswordChar = '·';
 
 
                 /* Need this for event usage later
@@ -129,7 +140,7 @@ namespace ProjectSnowshoes
                     System.Diagnostics.Process.Start(fiInf.FullName);
                 }; */
 
-                uA.Click += (sender, args) =>
+                dl.Click += (sender, args) =>
                 {
                     if (uA.Height != 90)
                     {

@@ -82,6 +82,7 @@
             // 
             // userList
             // 
+            this.userList.AutoScroll = true;
             this.userList.BackColor = System.Drawing.Color.WhiteSmoke;
             this.userList.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.userList.Location = new System.Drawing.Point(0, 40);
