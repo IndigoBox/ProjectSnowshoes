@@ -171,8 +171,7 @@ namespace ProjectSnowshoes
                         }
                         else if (pBox.Text == Properties.Settings.Default.woahThereHello[t])
                         {
-                            rUser(t);
-
+                            
                             Properties.Settings.Default.custColor.RemoveAt(t);
                             Properties.Settings.Default.lock_path.RemoveAt(t);
                             Properties.Settings.Default.loggedIn.RemoveAt(t);
@@ -218,10 +217,6 @@ namespace ProjectSnowshoes
             userList.Controls.Clear(); // .NET, you are amazing. 
             populateUsers();
 
-        }
-
-        public void rUser(int i) {
-            
         }
 
         public int nameLookup(string name)
