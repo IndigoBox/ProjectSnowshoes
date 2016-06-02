@@ -75,6 +75,8 @@ namespace ProjectSnowshoes
             space_text.ForeColor = theColorWow;
             otherAcc_text.ForeColor = theColorWow;
 
+            accInf_1.ForeColor = theColorWow;
+
 
             ImageFactory guessWhosBack = new ImageFactory();
             guessWhosBack.Load(@"C:\ProjectSnowshoes\System\Media\ResourcesMore\PersonOfScience.png");
@@ -220,19 +222,9 @@ namespace ProjectSnowshoes
             goBack_Ainf.Visible = false;
         }
 
-        private void accInfo_BackColorChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void accInfo_Click(object sender, EventArgs e)
         {
-   /*         Transitions.Transition.run(accInfo, "Visible", false, new Transitions.TransitionType_Linear(200));
-            Transitions.Transition.run(otherAcc, "Visible", false, new Transitions.TransitionType_Linear(200));
-            Transitions.Transition.run(space, "Visible", false, new Transitions.TransitionType_Linear(200));
-            Transitions.Transition.run(accInf_1, "Visible", true, new Transitions.TransitionType_Linear(200));
-            Transitions.Transition.run(accInf_2, "Visible", true, new Transitions.TransitionType_Linear(200));
-*/ 
+
             accInfo.Visible = false;
             otherAcc.Visible = false;
             space.Visible = false;

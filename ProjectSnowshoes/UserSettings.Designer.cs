@@ -91,7 +91,6 @@
             this.accInfo.Name = "accInfo";
             this.accInfo.Size = new System.Drawing.Size(150, 150);
             this.accInfo.TabIndex = 4;
-            this.accInfo.BackColorChanged += new System.EventHandler(this.accInfo_BackColorChanged);
             this.accInfo.Click += new System.EventHandler(this.accInfo_Click);
             this.accInfo.MouseLeave += new System.EventHandler(this.accountInfoItems_MouseLeave);
             this.accInfo.MouseHover += new System.EventHandler(this.accountInfoItems_Hover);
@@ -105,7 +104,6 @@
             this.accInfo_text.TabIndex = 7;
             this.accInfo_text.Text = "Account Information";
             this.accInfo_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.accInfo_text.BackColorChanged += new System.EventHandler(this.accInfo_BackColorChanged);
             this.accInfo_text.Click += new System.EventHandler(this.accInfo_Click);
             this.accInfo_text.MouseLeave += new System.EventHandler(this.accountInfoItems_MouseLeave);
             this.accInfo_text.MouseHover += new System.EventHandler(this.accountInfoItems_Hover);
@@ -252,7 +250,6 @@
             this.accInfo_img.Size = new System.Drawing.Size(60, 60);
             this.accInfo_img.TabIndex = 7;
             this.accInfo_img.TabStop = false;
-            this.accInfo_img.BackColorChanged += new System.EventHandler(this.accInfo_BackColorChanged);
             this.accInfo_img.Click += new System.EventHandler(this.accInfo_Click);
             this.accInfo_img.MouseLeave += new System.EventHandler(this.accountInfoItems_MouseLeave);
             this.accInfo_img.MouseHover += new System.EventHandler(this.accountInfoItems_Hover);
