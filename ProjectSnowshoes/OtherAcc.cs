@@ -153,11 +153,22 @@ namespace ProjectSnowshoes
                     }
                 };
 
+                pBox.KeyDown += (sender, args) =>
+                {
+                    if (args.KeyData == Keys.Enter) {
+                        
+                    }
+                };
+
             }
         }
 
         public void goBackJack()
         {
+            // Do it again.
+
+            userList.Controls.Clear(); // .NET, you are amazing. 
+            populateUsers();
 
         }
 
