@@ -24,6 +24,7 @@ namespace ProjectSnowshoes
             InitializeComponent();
             DoubleBuffered = true;
             
+
         }
 
         

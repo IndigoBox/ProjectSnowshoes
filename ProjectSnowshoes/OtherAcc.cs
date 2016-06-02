@@ -15,6 +15,8 @@ namespace ProjectSnowshoes
         public OtherAcc()
         {
             InitializeComponent();
+            //Properties.Settings.Default.username.Add("Meow");
+            //Properties.Settings.Default.Save();
         }
 
         private void retreat_Click(object sender, EventArgs e)
@@ -162,14 +164,40 @@ namespace ProjectSnowshoes
                         t = nameLookup(turnip.Text);
                         if (t < 0)
                         {
-                            // Throw error, stop program as this indicates corrupt index (this should not be -1)
+                            // Throw error, stop program as this indicates corrupt index (this should never be -1 if things work)
                             TheScreenIsBlue ts = new TheScreenIsBlue("PSR002: User data incorrectly populated for matching with user element.");
                             ts.Show();
                             ts.BringToFront();
                         }
                         else if (pBox.Text == Properties.Settings.Default.woahThereHello[t])
                         {
-                            //rUser(t);
+                            rUser(t);
+
+                            Properties.Settings.Default.custColor.RemoveAt(t);
+                            Properties.Settings.Default.lock_path.RemoveAt(t);
+                            Properties.Settings.Default.loggedIn.RemoveAt(t);
+                            Properties.Settings.Default.nickname.RemoveAt(t);
+                            Properties.Settings.Default.space_back_path.RemoveAt(t);
+                            Properties.Settings.Default.userimgacc_path.RemoveAt(t);
+                            Properties.Settings.Default.username.RemoveAt(t);
+                            Properties.Settings.Default.woahThereHello.RemoveAt(t);
+                            Properties.Settings.Default.fontsOfScience.RemoveAt(t);
+                            Properties.Settings.Default.darkerFontsOfScience.RemoveAt(t);
+                            Properties.Settings.Default.Save();
+
+                            try
+                            {
+                                System.IO.Directory.Delete(@"C:\ProjectSnowshoes\User\" + turnip.Text, true);
+                            }
+                            catch (Exception ex)
+                            {
+                                // This is a terrible way to do error reporting...knowing that errors might occur here if there's a problem with accounts not having actual files
+                                // Hey, all that's not going to be a problem in Escape though, since we are getting away from VC# settings...and VC# for the most part as well.
+                                TheScreenIsBlue ts = new TheScreenIsBlue("PSR003: User information removed, but files damaged or missing for requested username (" + ex.HResult + ").");
+                                ts.Show();
+                                ts.BringToFront();
+                            }
+
                             goBackJack();
                         }
                         else
@@ -193,24 +221,7 @@ namespace ProjectSnowshoes
         }
 
         public void rUser(int i) {
-            Console.Write(Properties.Settings.Default.custColor[i] + "\n");
-            Properties.Settings.Default.custColor.RemoveAt(i);
             
-            Properties.Settings.Default.darkerFontsOfScience.RemoveAt(i);
-            Properties.Settings.Default.emailList.RemoveAt(i);
-            Properties.Settings.Default.fontsOfScience.RemoveAt(i);
-            Properties.Settings.Default.lock_path.RemoveAt(i);
-            Properties.Settings.Default.loggedIn.RemoveAt(i);
-            Properties.Settings.Default.nickname.RemoveAt(i);
-            
-            Properties.Settings.Default.space_back_path.RemoveAt(i);
-            Properties.Settings.Default.userimg_path.RemoveAt(i);
-            Properties.Settings.Default.userimgacc_path.RemoveAt(i);
-            Properties.Settings.Default.username.RemoveAt(i);
-            Properties.Settings.Default.woahThereHello.RemoveAt(i);
-            Properties.Settings.Default.youAreTheSpecial.RemoveAt(i);
-            Properties.Settings.Default.youAreTheSpecialOrganization.RemoveAt(i);
-            Properties.Settings.Default.Save();
         }
 
         public int nameLookup(string name)
