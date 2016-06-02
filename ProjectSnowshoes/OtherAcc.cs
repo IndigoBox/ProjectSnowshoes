@@ -38,10 +38,12 @@ namespace ProjectSnowshoes
             for (int i = 0; i < Properties.Settings.Default.username.Count; i++)
             {
 
-           
+                int t = 0;
+                
                 Panel uA = new Panel();
                 uA.Show();
                 uA.BackColor = Color.White;
+                //uA.BackColor = Color.FromName(Properties.Settings.Default.custColor[i]);
                 uA.Left = 0;
                 uA.Width = this.Width;
                 uA.Height = 50;
@@ -68,6 +70,7 @@ namespace ProjectSnowshoes
                 turnip.Top = 0;
                 turnip.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 11);
                 turnip.ForeColor = Color.DimGray;
+                //turnip.ForeColor = Color.White;
                 turnip.TextAlign = ContentAlignment.MiddleLeft;
                 turnip.Text = Properties.Settings.Default.username[i];
 
@@ -156,7 +159,24 @@ namespace ProjectSnowshoes
                 pBox.KeyDown += (sender, args) =>
                 {
                     if (args.KeyData == Keys.Enter) {
-                        
+                        t = nameLookup(turnip.Text);
+                        if (t < 0)
+                        {
+                            // Throw error, stop program as this indicates corrupt index (this should not be -1)
+                            TheScreenIsBlue ts = new TheScreenIsBlue("PSR002: User data incorrectly populated for matching with user element.");
+                            ts.Show();
+                            ts.BringToFront();
+                        }
+                        else if (pBox.Text == Properties.Settings.Default.woahThereHello[t])
+                        {
+                            //rUser(t);
+                            goBackJack();
+                        }
+                        else
+                        {
+                            pBox.Text = "";
+                            toDel.Text = "That won't work. Try something else.";
+                        }
                     }
                 };
 
@@ -172,6 +192,38 @@ namespace ProjectSnowshoes
 
         }
 
+        public void rUser(int i) {
+            Console.Write(Properties.Settings.Default.custColor[i] + "\n");
+            Properties.Settings.Default.custColor.RemoveAt(i);
+            
+            Properties.Settings.Default.darkerFontsOfScience.RemoveAt(i);
+            Properties.Settings.Default.emailList.RemoveAt(i);
+            Properties.Settings.Default.fontsOfScience.RemoveAt(i);
+            Properties.Settings.Default.lock_path.RemoveAt(i);
+            Properties.Settings.Default.loggedIn.RemoveAt(i);
+            Properties.Settings.Default.nickname.RemoveAt(i);
+            
+            Properties.Settings.Default.space_back_path.RemoveAt(i);
+            Properties.Settings.Default.userimg_path.RemoveAt(i);
+            Properties.Settings.Default.userimgacc_path.RemoveAt(i);
+            Properties.Settings.Default.username.RemoveAt(i);
+            Properties.Settings.Default.woahThereHello.RemoveAt(i);
+            Properties.Settings.Default.youAreTheSpecial.RemoveAt(i);
+            Properties.Settings.Default.youAreTheSpecialOrganization.RemoveAt(i);
+            Properties.Settings.Default.Save();
+        }
+
+        public int nameLookup(string name)
+        {
+            for (int i = 0; i < Properties.Settings.Default.username.Count; i++)
+            {
+                if (name == Properties.Settings.Default.username[i])
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
         
     }
 }

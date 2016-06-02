@@ -232,3 +232,5 @@ C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes
 C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.csprojResolveAssemblyReference.cache
 C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.OtherAcc.resources
 C:\VS Projects\IndigoBox Studios\Project Snowshoes\OS\Canine\Snowshoes\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.TheScreenIsBlue.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.OtherAcc.resources
+C:\IndigoBox Studios\Project Snowshoes\Project\ProjectSnowshoes\ProjectSnowshoes\obj\x64\Release\ProjectSnowshoes.TheScreenIsBlue.resources

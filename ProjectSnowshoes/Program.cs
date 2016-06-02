@@ -62,6 +62,7 @@ namespace ProjectSnowshoes
                     Properties.Settings.Default.Save();
                 }
             }
+
             if (!Properties.Settings.Default.runTimes)
             {
                 Application.Run(new NewAccount_New1());
