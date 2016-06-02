@@ -65,6 +65,16 @@ namespace ProjectSnowshoes
 
         private String customPropertyCheck()
         {
+            if (Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge] != "Roboto Light")
+            {
+                if (Properties.Settings.Default.darkerFontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge] != "Roboto") return "Font Set Modified.";
+                return "Primary Font Modified: " + Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge];
+            }
+            else if (Properties.Settings.Default.darkerFontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge] != "Roboto")
+            {
+                return "Darker Font Variant Modified: " + Properties.Settings.Default.darkerFontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge];
+            }
+
             return "None: Account likely generated organically.";
         }
 

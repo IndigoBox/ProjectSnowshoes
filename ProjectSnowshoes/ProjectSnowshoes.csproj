@@ -130,12 +130,6 @@
     <Compile Include="AccInfo.Designer.cs">
       <DependentUpon>AccInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="AccountInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AccountInfo.Designer.cs">
-      <DependentUpon>AccountInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="AllTheLittleIcons.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -378,9 +372,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AccInfo.resx">
       <DependentUpon>AccInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AccountInfo.resx">
-      <DependentUpon>AccountInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppsSlidingMenu.resx">
       <DependentUpon>AppsSlidingMenu.cs</DependentUpon>
