@@ -28,11 +28,11 @@ namespace ProjectSnowshoes
         private void UserSettings_Load(object sender, EventArgs e)
         {
 
-            
+
 
             this.Top = Screen.PrimaryScreen.WorkingArea.Height / 2 - 240;
             this.Left = Screen.PrimaryScreen.WorkingArea.Width / 2 - 320;
-            
+
             colorizationsOfScience(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
             accountImg.BackgroundImage = Image.FromFile(Properties.Settings.Default.userimgacc_path[Properties.Settings.Default.whoIsThisCrazyDoge]);
             accountName.Text = Properties.Settings.Default.username[Properties.Settings.Default.whoIsThisCrazyDoge];
@@ -55,6 +55,17 @@ namespace ProjectSnowshoes
             // User32 and StackOverflow persons, you da real MVPs.
             AnimateWindow(this.Handle, 160, AW_BLEND | AW_VER_POSITIVE);
 
+            // Completely ignoring my terrible self above...
+            // ...populate the account information...information.
+
+            accInf_2.Text = Properties.Settings.Default.whoIsThisCrazyDoge + "\n" + @"C:\ProjectSnowshoes\User\" + Properties.Settings.Default.username[Properties.Settings.Default.whoIsThisCrazyDoge]
+                + "\n" + customPropertyCheck();
+
+        }
+
+        private String customPropertyCheck()
+        {
+            return "None: Account likely generated organically.";
         }
 
         private void colorizationsOfScience(Color theColorWow)
@@ -196,6 +207,39 @@ namespace ProjectSnowshoes
             OtherAcc oacc = new OtherAcc();
             oacc.Show();
             oacc.BringToFront();
+        }
+
+        private void toggleOverview_Click(object sender, EventArgs e)
+        {
+            accInfo.Visible = true;
+            otherAcc.Visible = true;
+            space.Visible = true;
+            accInf_1.Visible = false;
+            accInf_2.Visible = false;
+            toggleOverview.Visible = false;
+            goBack_Ainf.Visible = false;
+        }
+
+        private void accInfo_BackColorChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void accInfo_Click(object sender, EventArgs e)
+        {
+   /*         Transitions.Transition.run(accInfo, "Visible", false, new Transitions.TransitionType_Linear(200));
+            Transitions.Transition.run(otherAcc, "Visible", false, new Transitions.TransitionType_Linear(200));
+            Transitions.Transition.run(space, "Visible", false, new Transitions.TransitionType_Linear(200));
+            Transitions.Transition.run(accInf_1, "Visible", true, new Transitions.TransitionType_Linear(200));
+            Transitions.Transition.run(accInf_2, "Visible", true, new Transitions.TransitionType_Linear(200));
+*/ 
+            accInfo.Visible = false;
+            otherAcc.Visible = false;
+            space.Visible = false;
+            accInf_1.Visible = true;
+            accInf_2.Visible = true;
+            toggleOverview.Visible = true;
+            goBack_Ainf.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)

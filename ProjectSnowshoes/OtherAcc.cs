@@ -186,7 +186,7 @@ namespace ProjectSnowshoes
 
                             try
                             {
-                                System.IO.Directory.Delete(@"C:\ProjectSnowshoes\User\" + turnip.Text, true);
+                                System.IO.Directory.Delete(@"C:\ProjectSnowshoes\User\" + turnip.Text, true); // Note that we have to use this as a source for username, since we removed it from Settings earlier.
                             }
                             catch (Exception ex)
                             {
