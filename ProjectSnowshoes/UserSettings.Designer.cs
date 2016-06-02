@@ -32,24 +32,29 @@
             this.nickname = new System.Windows.Forms.Label();
             this.accInfo = new System.Windows.Forms.Panel();
             this.accInfo_text = new System.Windows.Forms.Label();
-            this.accInfo_img = new System.Windows.Forms.PictureBox();
             this.space = new System.Windows.Forms.Panel();
             this.space_text = new System.Windows.Forms.Label();
-            this.space_img = new System.Windows.Forms.PictureBox();
             this.otherAcc = new System.Windows.Forms.Panel();
             this.otherAcc_text = new System.Windows.Forms.Label();
-            this.otherAcc_img = new System.Windows.Forms.PictureBox();
+            this.goBack_Ainf = new System.Windows.Forms.PictureBox();
             this.saveSettings = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.otherAcc_img = new System.Windows.Forms.PictureBox();
+            this.space_img = new System.Windows.Forms.PictureBox();
+            this.accInfo_img = new System.Windows.Forms.PictureBox();
             this.accountImg = new System.Windows.Forms.PictureBox();
             this.lockBack = new System.Windows.Forms.PictureBox();
+            this.toggleOverview = new System.Windows.Forms.Label();
+            this.accInf_1 = new System.Windows.Forms.Label();
+            this.accInf_2 = new System.Windows.Forms.Label();
             this.accInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.accInfo_img)).BeginInit();
             this.space.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.space_img)).BeginInit();
             this.otherAcc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.goBack_Ainf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otherAcc_img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.space_img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accInfo_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lockBack)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +68,7 @@
             this.accountName.Name = "accountName";
             this.accountName.Size = new System.Drawing.Size(446, 58);
             this.accountName.TabIndex = 2;
-            this.accountName.Text = "William Martin Joel";
+            this.accountName.Text = "Jack Altman";
             this.accountName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // nickname
@@ -71,11 +76,11 @@
             this.nickname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nickname.Font = new System.Drawing.Font("Pacifico", 7.875F);
             this.nickname.ForeColor = System.Drawing.Color.DimGray;
-            this.nickname.Location = new System.Drawing.Point(9, 131);
+            this.nickname.Location = new System.Drawing.Point(197, 131);
             this.nickname.Name = "nickname";
-            this.nickname.Size = new System.Drawing.Size(437, 46);
+            this.nickname.Size = new System.Drawing.Size(249, 46);
             this.nickname.TabIndex = 3;
-            this.nickname.Text = "\"Billy\"";
+            this.nickname.Text = "\"Doge\"";
             this.nickname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // accInfo
@@ -86,6 +91,8 @@
             this.accInfo.Name = "accInfo";
             this.accInfo.Size = new System.Drawing.Size(150, 150);
             this.accInfo.TabIndex = 4;
+            this.accInfo.BackColorChanged += new System.EventHandler(this.accInfo_BackColorChanged);
+            this.accInfo.Click += new System.EventHandler(this.accInfo_Click);
             this.accInfo.MouseLeave += new System.EventHandler(this.accountInfoItems_MouseLeave);
             this.accInfo.MouseHover += new System.EventHandler(this.accountInfoItems_Hover);
             // 
@@ -98,20 +105,10 @@
             this.accInfo_text.TabIndex = 7;
             this.accInfo_text.Text = "Account Information";
             this.accInfo_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.accInfo_text.BackColorChanged += new System.EventHandler(this.accInfo_BackColorChanged);
+            this.accInfo_text.Click += new System.EventHandler(this.accInfo_Click);
             this.accInfo_text.MouseLeave += new System.EventHandler(this.accountInfoItems_MouseLeave);
             this.accInfo_text.MouseHover += new System.EventHandler(this.accountInfoItems_Hover);
-            // 
-            // accInfo_img
-            // 
-            this.accInfo_img.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.PersonsOfScience;
-            this.accInfo_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.accInfo_img.Location = new System.Drawing.Point(45, 18);
-            this.accInfo_img.Name = "accInfo_img";
-            this.accInfo_img.Size = new System.Drawing.Size(60, 60);
-            this.accInfo_img.TabIndex = 7;
-            this.accInfo_img.TabStop = false;
-            this.accInfo_img.MouseLeave += new System.EventHandler(this.accountInfoItems_MouseLeave);
-            this.accInfo_img.MouseHover += new System.EventHandler(this.accountInfoItems_Hover);
             // 
             // space
             // 
@@ -138,19 +135,6 @@
             this.space_text.MouseLeave += new System.EventHandler(this.spaceItems_MouseLeave);
             this.space_text.MouseHover += new System.EventHandler(this.spaceItems_Hover);
             // 
-            // space_img
-            // 
-            this.space_img.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.WooooooooooooooooooooooooooooooooooooooDoges;
-            this.space_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.space_img.Location = new System.Drawing.Point(45, 18);
-            this.space_img.Name = "space_img";
-            this.space_img.Size = new System.Drawing.Size(60, 60);
-            this.space_img.TabIndex = 7;
-            this.space_img.TabStop = false;
-            this.space_img.Click += new System.EventHandler(this.spaceChanger_Click);
-            this.space_img.MouseLeave += new System.EventHandler(this.spaceItems_MouseLeave);
-            this.space_img.MouseHover += new System.EventHandler(this.spaceItems_Hover);
-            // 
             // otherAcc
             // 
             this.otherAcc.Controls.Add(this.otherAcc_text);
@@ -176,18 +160,17 @@
             this.otherAcc_text.MouseLeave += new System.EventHandler(this.otherAccItems_MouseLeave);
             this.otherAcc_text.MouseHover += new System.EventHandler(this.otherAccItems_Hover);
             // 
-            // otherAcc_img
+            // goBack_Ainf
             // 
-            this.otherAcc_img.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.LookAtDat;
-            this.otherAcc_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.otherAcc_img.Location = new System.Drawing.Point(45, 18);
-            this.otherAcc_img.Name = "otherAcc_img";
-            this.otherAcc_img.Size = new System.Drawing.Size(60, 60);
-            this.otherAcc_img.TabIndex = 7;
-            this.otherAcc_img.TabStop = false;
-            this.otherAcc_img.Click += new System.EventHandler(this.otherAcc_img_Click);
-            this.otherAcc_img.MouseLeave += new System.EventHandler(this.otherAccItems_MouseLeave);
-            this.otherAcc_img.MouseHover += new System.EventHandler(this.otherAccItems_Hover);
+            this.goBack_Ainf.Image = global::ProjectSnowshoes.Properties.Resources.GrayLeftArrow;
+            this.goBack_Ainf.Location = new System.Drawing.Point(12, 176);
+            this.goBack_Ainf.Name = "goBack_Ainf";
+            this.goBack_Ainf.Size = new System.Drawing.Size(30, 30);
+            this.goBack_Ainf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.goBack_Ainf.TabIndex = 12;
+            this.goBack_Ainf.TabStop = false;
+            this.goBack_Ainf.Visible = false;
+            this.goBack_Ainf.Click += new System.EventHandler(this.toggleOverview_Click);
             // 
             // saveSettings
             // 
@@ -234,6 +217,46 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // otherAcc_img
+            // 
+            this.otherAcc_img.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.LookAtDat;
+            this.otherAcc_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.otherAcc_img.Location = new System.Drawing.Point(45, 18);
+            this.otherAcc_img.Name = "otherAcc_img";
+            this.otherAcc_img.Size = new System.Drawing.Size(60, 60);
+            this.otherAcc_img.TabIndex = 7;
+            this.otherAcc_img.TabStop = false;
+            this.otherAcc_img.Click += new System.EventHandler(this.otherAcc_img_Click);
+            this.otherAcc_img.MouseLeave += new System.EventHandler(this.otherAccItems_MouseLeave);
+            this.otherAcc_img.MouseHover += new System.EventHandler(this.otherAccItems_Hover);
+            // 
+            // space_img
+            // 
+            this.space_img.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.WooooooooooooooooooooooooooooooooooooooDoges;
+            this.space_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.space_img.Location = new System.Drawing.Point(45, 18);
+            this.space_img.Name = "space_img";
+            this.space_img.Size = new System.Drawing.Size(60, 60);
+            this.space_img.TabIndex = 7;
+            this.space_img.TabStop = false;
+            this.space_img.Click += new System.EventHandler(this.spaceChanger_Click);
+            this.space_img.MouseLeave += new System.EventHandler(this.spaceItems_MouseLeave);
+            this.space_img.MouseHover += new System.EventHandler(this.spaceItems_Hover);
+            // 
+            // accInfo_img
+            // 
+            this.accInfo_img.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.PersonsOfScience;
+            this.accInfo_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.accInfo_img.Location = new System.Drawing.Point(45, 18);
+            this.accInfo_img.Name = "accInfo_img";
+            this.accInfo_img.Size = new System.Drawing.Size(60, 60);
+            this.accInfo_img.TabIndex = 7;
+            this.accInfo_img.TabStop = false;
+            this.accInfo_img.BackColorChanged += new System.EventHandler(this.accInfo_BackColorChanged);
+            this.accInfo_img.Click += new System.EventHandler(this.accInfo_Click);
+            this.accInfo_img.MouseLeave += new System.EventHandler(this.accountInfoItems_MouseLeave);
+            this.accInfo_img.MouseHover += new System.EventHandler(this.accountInfoItems_Hover);
+            // 
             // accountImg
             // 
             this.accountImg.BackColor = System.Drawing.Color.Transparent;
@@ -258,12 +281,53 @@
             this.lockBack.TabStop = false;
             this.lockBack.Click += new System.EventHandler(this.lockBack_Click);
             // 
+            // toggleOverview
+            // 
+            this.toggleOverview.Font = new System.Drawing.Font("Roboto Light", 10.875F);
+            this.toggleOverview.ForeColor = System.Drawing.Color.Gray;
+            this.toggleOverview.Location = new System.Drawing.Point(48, 176);
+            this.toggleOverview.Name = "toggleOverview";
+            this.toggleOverview.Size = new System.Drawing.Size(143, 30);
+            this.toggleOverview.TabIndex = 13;
+            this.toggleOverview.Text = "Back to Overview";
+            this.toggleOverview.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toggleOverview.Visible = false;
+            this.toggleOverview.Click += new System.EventHandler(this.toggleOverview_Click);
+            // 
+            // accInf_1
+            // 
+            this.accInf_1.Font = new System.Drawing.Font("Roboto Light", 10.875F);
+            this.accInf_1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.accInf_1.Location = new System.Drawing.Point(54, 277);
+            this.accInf_1.Name = "accInf_1";
+            this.accInf_1.Size = new System.Drawing.Size(143, 60);
+            this.accInf_1.TabIndex = 14;
+            this.accInf_1.Text = "Account Number\r\nUser Directory\r\nCustom Properties";
+            this.accInf_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.accInf_1.Visible = false;
+            // 
+            // accInf_2
+            // 
+            this.accInf_2.Font = new System.Drawing.Font("Roboto Light", 10.875F);
+            this.accInf_2.ForeColor = System.Drawing.Color.Gray;
+            this.accInf_2.Location = new System.Drawing.Point(225, 277);
+            this.accInf_2.Name = "accInf_2";
+            this.accInf_2.Size = new System.Drawing.Size(378, 60);
+            this.accInf_2.TabIndex = 15;
+            this.accInf_2.Text = "3\r\nC:\\ProjectSnowshoes\\...\r\nNone (organic account generation)";
+            this.accInf_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.accInf_2.Visible = false;
+            // 
             // UserSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(640, 480);
+            this.Controls.Add(this.accInf_2);
+            this.Controls.Add(this.accInf_1);
+            this.Controls.Add(this.toggleOverview);
+            this.Controls.Add(this.goBack_Ainf);
             this.Controls.Add(this.saveSettings);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -281,11 +345,12 @@
             this.Text = "UserSettings";
             this.Load += new System.EventHandler(this.UserSettings_Load);
             this.accInfo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.accInfo_img)).EndInit();
             this.space.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.space_img)).EndInit();
             this.otherAcc.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.goBack_Ainf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otherAcc_img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.space_img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accInfo_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lockBack)).EndInit();
             this.ResumeLayout(false);
@@ -310,5 +375,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button saveSettings;
+        private System.Windows.Forms.PictureBox goBack_Ainf;
+        private System.Windows.Forms.Label toggleOverview;
+        private System.Windows.Forms.Label accInf_1;
+        private System.Windows.Forms.Label accInf_2;
     }
 }
