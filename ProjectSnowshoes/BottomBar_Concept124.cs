@@ -179,14 +179,34 @@ namespace ProjectSnowshoes
             
         }
 
+        delegate bool EnumThreadDelegate(IntPtr hWnd, IntPtr lParam);
+        [DllImport("user32.dll")]
+        static extern bool EnumThreadWindows(int dwThreadId, EnumThreadDelegate lpfn,
+        IntPtr lParam);
+
+        private IEnumerable<IntPtr> getHandles(Process proc)
+        {
+            // This is my first work with handles on Windows in a while, so 
+            // please be kind...also, thanks to Stack Overflow (Spirin, K) for posting 
+            // an elegant solution that handles this...a lot of what you see ahead 
+            // is basically a re-transcription of his response!
+
+            var h = new List<IntPtr>(); // Seriously, match this line. It's nearly identical.
+
+            foreach (ProcessThread t in proc.Threads)
+            {
+                EnumThreadWindows(t.Id, (hWnd, lParam)=> { h.Add(hWnd); return true; }, IntPtr.Zero);
+            }
+
+            return h;
+
+        }
+
         private void goGenerateProcessesFriendship()
         {
             int artOfficial = 0;
-
             foreach (var theProcess in Process.GetProcesses())
             {
-                // hmGreatJobFantasticAmazing.BackgroundImageLayout = ImageLayout.Center;
-
                 if (theProcess.MainWindowTitle != "" && theProcess.MainWindowTitle != "Space")
                 {
                     artOfficial++;
@@ -199,21 +219,24 @@ namespace ProjectSnowshoes
                 int procCount = 0;
                 foreach (var theProcess in Process.GetProcesses())
                 {
+                    
                     if (procCount != 0 && procCount != 4) { 
                             PictureBox hmGreatJobFantasticAmazing = new PictureBox();
                             if ((theProcess.MainWindowTitle != "" && theProcess.Modules[0].FileName != "ProjectSnowshoes.exe") && theProcess.MainWindowHandle != null)
                             {
-                                //hmGreatJobFantasticAmazing.Text = theProcess.MainWindowTitle;
+                            foreach (var h in getHandles(theProcess))
+                            {
+                                
+                            }
+                                
+                            
                                 hmGreatJobFantasticAmazing.Margin = new Padding(6, 0, 6, 0);
                                 hmGreatJobFantasticAmazing.Visible = true;
                                 hmGreatJobFantasticAmazing.SizeMode = PictureBoxSizeMode.CenterImage;
                                 hmGreatJobFantasticAmazing.BackgroundImageLayout = ImageLayout.Zoom;
-                                // hmGreatJobFantasticAmazing.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 13, FontStyle.Italic);
+                                
                                 Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName).ToBitmap().Save(@"C:\ProjectSnowshoes\temptaskico.png");
-                                /*DualImageForm thanksVKLines = new DualImageForm();
-                                thanksVKLines.pic = Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName).ToBitmap();
-                                thanksVKLines.analyze();
-                                thanksVKLines.pic2.Save(@"C:\ProjectSnowshoes\newtemptaskico.png");*/
+                                
                                 ImageFactory grayify = new ImageFactory();
                                 grayify.Load(@"C:\ProjectSnowshoes\temptaskico.png");
                                 Size sizeeeee = new System.Drawing.Size();
@@ -221,12 +244,11 @@ namespace ProjectSnowshoes
                                 sizeeeee.Width = 20;
                                 ImageProcessor.Imaging.ResizeLayer reLay = new ImageProcessor.Imaging.ResizeLayer(sizeeeee);
                                 grayify.Resize(reLay);
-                                //grayify.Tint(Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
-                                //grayify.Tint(Color.FromName("Gray"));
+                                
                                 hmGreatJobFantasticAmazing.Image = grayify.Image;
                                 hmGreatJobFantasticAmazing.Click += (sender, args) =>
                                 {
-                                //System.Diagnostics.Process.Start(theProcess.Modules[0].FileName);
+                                
                                 ShowWindow(theProcess.MainWindowHandle, 5);
                                     ShowWindow(theProcess.MainWindowHandle, 9);
                                 };
@@ -235,7 +257,7 @@ namespace ProjectSnowshoes
                                     Properties.Settings.Default.stayHere = true;
                                     Properties.Settings.Default.Save();
                                     int recordNao = hmGreatJobFantasticAmazing.Left;
-                                // hmGreatJobFantasticAmazing.BackColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
+                               
                                 hmGreatJobFantasticAmazing.Image.Save(@"C:\ProjectSnowshoes\TheyNeedToKeepOriginalAlbums.png");
                                     Size sizeeeeeA = new System.Drawing.Size();
                                     sizeeeeeA.Height = 100;
