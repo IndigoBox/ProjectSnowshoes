@@ -183,6 +183,10 @@ namespace ProjectSnowshoes
         [DllImport("user32.dll")]
         static extern bool EnumThreadWindows(int dwThreadId, EnumThreadDelegate lpfn,
         IntPtr lParam);
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
+        [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
+        static extern int GetWindowTextLength(IntPtr hWnd);
 
         private IEnumerable<IntPtr> getHandles(Process proc)
         {
@@ -227,7 +231,10 @@ namespace ProjectSnowshoes
                             foreach (var h in getHandles(theProcess))
                             {
                                 
-                            }
+                                StringBuilder sb = new StringBuilder(GetWindowTextLength(h)+1);
+                                GetWindowText(h, sb, sb.Capacity);
+                                
+                            
                                 
                             
                                 hmGreatJobFantasticAmazing.Margin = new Padding(6, 0, 6, 0);
@@ -287,7 +294,7 @@ namespace ProjectSnowshoes
                                 // I can just make another form to draw over and go have turnips with parameters
                                 // Also credits to Microsoft Word's "Sentence Case" option as this came out in all caps originally
                                 // Measuring string turnt-up-edness was guided by an answer on Stack Overflow by Tom Anderson.
-                                String keepThisShortWeNeedToOptimize = Process.GetProcessById(theProcess.Id).MainWindowTitle.Replace("&", "&&");
+                                String keepThisShortWeNeedToOptimize = sb.ToString().Replace("&", "&&");
                                     Graphics heyGuessWhatGraphicsYeahThatsRight = Graphics.FromImage(new Bitmap(1, 1));
                                     SizeF sure = heyGuessWhatGraphicsYeahThatsRight.MeasureString(keepThisShortWeNeedToOptimize, new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 14, FontStyle.Regular, GraphicsUnit.Point));
                                     Size sureAgain = sure.ToSize();
@@ -339,6 +346,7 @@ namespace ProjectSnowshoes
                                 hmGreatJobFantasticAmazing.Width = 50;
                                 spaceForProcesses.Controls.Add(hmGreatJobFantasticAmazing);
                             }
+                        }
 
                     }
                     procCount++;
