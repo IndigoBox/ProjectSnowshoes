@@ -224,13 +224,13 @@ namespace ProjectSnowshoes
                 foreach (var theProcess in Process.GetProcesses())
                 {
                     
-                    if (procCount != 0 && procCount != 4) { 
-                            PictureBox hmGreatJobFantasticAmazing = new PictureBox();
+                    if (procCount != 0 && procCount != 4) {
+                        
                             if ((theProcess.MainWindowTitle != "" && theProcess.Modules[0].FileName != "ProjectSnowshoes.exe") && theProcess.MainWindowHandle != null)
                             {
                             foreach (var h in getHandles(theProcess))
                             {
-                                
+                                PictureBox hmGreatJobFantasticAmazing = new PictureBox();
                                 StringBuilder sb = new StringBuilder(GetWindowTextLength(h)+1);
                                 GetWindowText(h, sb, sb.Capacity);
                                 
