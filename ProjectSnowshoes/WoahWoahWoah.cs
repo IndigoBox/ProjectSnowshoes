@@ -102,6 +102,16 @@ namespace ProjectSnowshoes
                 NewAccount_New1 notANumber = new NewAccount_New1();
                 notANumber.Show();
             }
+            
+            for (int i = 0; i < Application.OpenForms.Count; i++)
+            {
+                if (Application.OpenForms[i].Name == "Space") 
+                    {
+                        Application.OpenForms[i].Close();
+                    }
+            }
+
+
             this.Close();
             
         }
