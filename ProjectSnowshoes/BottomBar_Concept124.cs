@@ -187,6 +187,9 @@ namespace ProjectSnowshoes
         static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
         [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
         static extern int GetWindowTextLength(IntPtr hWnd);
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool IsWindowVisible(IntPtr hWnd);
 
         private IEnumerable<IntPtr> getHandles(Process proc)
         {
@@ -225,12 +228,13 @@ namespace ProjectSnowshoes
                 {
                     
                     if (procCount != 0 && procCount != 4) { 
-                            PictureBox hmGreatJobFantasticAmazing = new PictureBox();
+                            
                             if ((theProcess.MainWindowTitle != "" && theProcess.Modules[0].FileName != "ProjectSnowshoes.exe") && theProcess.MainWindowHandle != null)
                             {
                             foreach (var h in getHandles(theProcess))
                             {
-                                
+                                if (IsWindowVisible(h)) { 
+                                PictureBox hmGreatJobFantasticAmazing = new PictureBox();
                                 StringBuilder sb = new StringBuilder(GetWindowTextLength(h)+1);
                                 GetWindowText(h, sb, sb.Capacity);
                                 
@@ -345,6 +349,7 @@ namespace ProjectSnowshoes
                                 hmGreatJobFantasticAmazing.Height = this.Height;
                                 hmGreatJobFantasticAmazing.Width = 50;
                                 spaceForProcesses.Controls.Add(hmGreatJobFantasticAmazing);
+                                }
                             }
                         }
 
