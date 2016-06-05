@@ -885,15 +885,10 @@ namespace ProjectSnowshoes
         private const int APPCOMMAND_VOLUME_UP = 0xA0000;
         private const int APPCOMMAND_VOLUME_DOWN = 0x90000;
         private const int WM_APPCOMMAND = 0x319;
+        
         private void takeTheLongKeyHome(object sender, KeyEventArgs e)
         {
             
-            
-            
-            if (e.KeyCode == Keys.VolumeUp)
-            {
-
-            }
             if (e.KeyCode == Keys.Up)
             {
                 /* Robert, does this look like the times of XP anymore?
@@ -903,18 +898,11 @@ namespace ProjectSnowshoes
                 meowingDoges = meowingDoges & 0x0000ffff;
                 MessageBox.Show(meowingDoges.ToString());*/
 
-                waveOutSetVolume(this.Handle, 0x0000);
-                MessageBox.Show(waveOutSetVolume(this.Handle, 0x0000).ToString());
-                
-                // Well since this already works when Explorer is actually open
-                // Guess what is happening now
-                // I SWEAR WINDMILL IF THERE IS NO WAY TO CONTROL VOLUME OUTSIDE OF EXPLORER
-                // Also that is the first instance of the term Windmill in replacement of Windows in this code
-                // Wow that joke has been around with me for so many years now
-                
-                // Wait, what was I doing?
-                // Oh yeah, that's right, commenting out code, here goes...
-                SendMessageW(this.Handle, 0x0319, this.Handle, (IntPtr)14);
+                //waveOutSetVolume(this.Handle, 0x0000);
+                //MessageBox.Show(waveOutSetVolume(this.Handle, 0x0000).ToString());
+
+                // So, just so I remember this doesn't work...THIS DOESN'T WORK, and requires Explorer open.
+                //SendMessageW(this.Handle, WM_APPCOMMAND, this.Handle, (IntPtr)APPCOMMAND_VOLUME_MUTE);
                 
             }
         }
