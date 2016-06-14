@@ -58,6 +58,12 @@ namespace ProjectSnowshoes
             }
         }
 
+        private void wind ()
+        {
+            // Since KeyDown won't work 10/10 times 
+
+        }
+
         private void cleanUpMinerva()
         {
             for (int i = 0; i < Application.OpenForms.Count; i++)
@@ -92,6 +98,20 @@ namespace ProjectSnowshoes
             else if (SystemInformation.PowerStatus.BatteryLifePercent > 0.12 || SystemInformation.PowerStatus.BatteryChargeStatus == BatteryChargeStatus.Charging)
             {
                 l1 = l2 = false;
+            }
+        }
+
+        private void BackgroundFunctionManager_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.LWin && e.KeyCode == Keys.D)
+            {
+                for (int i = 0; i < Application.OpenForms.Count; i++)
+                {
+                    if (Application.OpenForms[i].Name == "Space")
+                    {
+                        Application.OpenForms[i].BringToFront();
+                    }
+                }
             }
         }
 
