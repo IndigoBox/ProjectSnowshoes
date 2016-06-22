@@ -775,6 +775,11 @@ namespace ProjectSnowshoes
             }
         }
 
+        private void qSetup_Click(object sender, EventArgs e)
+        {
+            this.Close(); // May be logged in, so don't close entire app
+        }
+
         private void mayfieldPanel_Images_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog spacefbd = new FolderBrowserDialog();
@@ -866,9 +871,16 @@ namespace ProjectSnowshoes
                 arcadePanel_Reflektions.Text = "Copying app shortcut \"" + Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\')[
                     Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\').Length - 1] + "\"";
                 this.Invalidate();
+                try { 
                 File.Copy(Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i],
                     @"C:\ProjectSnowshoes\User\" + formalName + @"\Apps\" + Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\')[
-                    Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\').Length - 1]);
+                    Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\').Length - 1],true);
+                }
+                catch (Exception ex)
+                {
+                    Console.Write(ex.ToString()); // Most likely an overwrite exception. Going to test with something here. 
+                    // Gave an overwrite option above, though, so going to figure out what's going on here.
+                }
             }
 
             // Space

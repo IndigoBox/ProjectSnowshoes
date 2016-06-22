@@ -110,6 +110,7 @@
             this.arcadePanel_TheSuburbs = new System.Windows.Forms.Label();
             this.arcadePanel_ReadyToStart = new System.Windows.Forms.Label();
             this.bgWriter = new System.ComponentModel.BackgroundWorker();
+            this.qSetup = new System.Windows.Forms.Button();
             this.about1Panel1.SuspendLayout();
             this.passwordPanel_2.SuspendLayout();
             this.aestheticsColorPanel.SuspendLayout();
@@ -1158,6 +1159,18 @@
             // 
             this.bgWriter.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWriter_DoWork);
             // 
+            // qSetup
+            // 
+            this.qSetup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.qSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.qSetup.Location = new System.Drawing.Point(1269, 27);
+            this.qSetup.Name = "qSetup";
+            this.qSetup.Size = new System.Drawing.Size(75, 31);
+            this.qSetup.TabIndex = 43;
+            this.qSetup.Text = "Exit Setup";
+            this.qSetup.UseVisualStyleBackColor = true;
+            this.qSetup.Click += new System.EventHandler(this.qSetup_Click);
+            // 
             // NewAccount_New2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1165,6 +1178,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(87)))), ((int)(((byte)(143)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.qSetup);
             this.Controls.Add(this.arcadePanel);
             this.Controls.Add(this.mayfieldPanel);
             this.Controls.Add(this.backgroundsPanel);
@@ -1295,5 +1309,6 @@
         private System.Windows.Forms.Label arcadePanel_TheSuburbs;
         private System.Windows.Forms.Label arcadePanel_ReadyToStart;
         private System.ComponentModel.BackgroundWorker bgWriter;
+        private System.Windows.Forms.Button qSetup;
     }
 }
