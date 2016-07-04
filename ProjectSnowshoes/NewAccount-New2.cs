@@ -59,7 +59,20 @@ namespace ProjectSnowshoes
             accountPicturePath = @"C:\ProjectSnowshoes\System\Media\DefaultIcon.png";
             lockScreenPath = @"C:\ProjectSnowshoes\System\Media\blackBackSearch.png";
             spacePath = @"C:\ProjectSnowshoes\System\Media\RunningOnIce.png";
-            
+
+            // Presets for document copying
+
+            imgCopyPath = @"C:\Users\" + System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1] + "\\Pictures";
+            docsCopyPath = @"C:\Users\" + System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1] + "\\Documents";
+            spaceCopyPath = @"C:\Users\" + System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1] + "\\Pictures";
+            appsCopyPath = @"C:\Users\" + System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1] + @"\AppData\Roaming\Microsoft\Windows\Start Menu";
+            Console.WriteLine(appsCopyPath);
+
+            mayfieldPanel_AppsPath.Text = "Default Selected";
+            mayfieldPanel_DocumentsPath.Text = "Default Selected";
+            mayfieldPanel_ImagesPath.Text = "Default Selected";
+            mayfieldPanel_SpacePath.Text = "Default Selected";
+
             // Non-primary panels
 
             passwordPanel_2.Left = 0 - passwordPanel_2.Width;
@@ -147,13 +160,8 @@ namespace ProjectSnowshoes
                 password_ThatPWTho.Text == "batman" ||
                 password_ThatPWTho.Text == "trustno1")
             {
-                password_StrengthGuide.Text = "I might actually cry. That password is one of the 25 most used (SplashData).";
+                password_StrengthGuide.Text = "I might actually cry. That password is one of the 25 most used, according to SplashData.";
                 Transition.run(this, "BackColor", Color.Black, new TransitionType_EaseInEaseOut(200));
-            }
-            else if (password_ThatPWTho.Text == "knight")
-            {
-                password_StrengthGuide.Text = "Nice to see you, Viktor.";
-                Transition.run(this, "BackColor", Color.Indigo, new TransitionType_EaseInEaseOut(200));
             }
             else if (password_ThatPWTho.Text.Length <= 6)
             {
