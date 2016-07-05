@@ -17,8 +17,6 @@ namespace ProjectSnowshoes
         
         // All to be saved at the end, just in case the user wants to cancel or exits prematurely.
 
-        // Speaking of which, those means of exit still need to be added...
-
         String formalName, nickname;
 
         String hiAgain;
