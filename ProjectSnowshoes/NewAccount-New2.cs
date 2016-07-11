@@ -776,7 +776,7 @@ namespace ProjectSnowshoes
             {
                 if (step5.BackColor == Color.White)
                 {
-                    finishSetup(); // If at last step, call to finish setup.
+                    bgWriter.RunWorkerAsync(); // If at last step, call to finish setup.
                 }
             }
         }
@@ -785,6 +785,11 @@ namespace ProjectSnowshoes
         {
             this.Close(); // May be logged in, so don't close entire app
         }
+
+        //private void bgWriter_ProgressChanged(string toPrint)
+        //{
+        //    arcadePanel_Reflektions.Text = toPrint;
+        //}
 
         private void mayfieldPanel_Images_Click(object sender, EventArgs e)
         {
@@ -828,10 +833,10 @@ namespace ProjectSnowshoes
 
         private void arcadePanel_Create_Click(object sender, EventArgs e)
         {
-            finishSetup();
+            bgWriter.RunWorkerAsync();
         }
 
-        private void finishSetup()
+        private void bgWriter_DoWork(object sender, DoWorkEventArgs e)
         { 
             // Well, here we are!
 
@@ -969,10 +974,10 @@ namespace ProjectSnowshoes
 
         }
 
-        private void bgWriter_DoWork(object sender, DoWorkEventArgs e)
-        {
+        //private void bgWriter_DoWork(object sender, DoWorkEventArgs e)
+        //{
 
-        }
+        //}
 
         public void populateDirectories(System.IO.DirectoryInfo initPath)
         {
@@ -991,8 +996,8 @@ namespace ProjectSnowshoes
             }
             // MICROSOFT: "This is thrown if even one of the files requires permissions greater 
             // than the application provides."
-            // Side note: Why did Microsoft create pseudo-folders to My Music, My Documents, and My Videos?
-            // We get it, some of you like XP, but it is time to move on!
+            // Side question: Why did Microsoft create pseudo-folders to My Music, My Documents, and My Videos?
+            
             catch (UnauthorizedAccessException e)
             {
                 // For now, we will not report any unauthorized access exceptions. We could log it, as in the Microsoft example, but...well, nahhh. 
