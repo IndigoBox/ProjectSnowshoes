@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -121,7 +122,13 @@ namespace ProjectSnowshoes
 
         private void turnOffImage_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("explorer");
+
+            ProcessStartInfo si = new ProcessStartInfo()
+            {
+                UseShellExecute = false,
+                FileName = "explorer"
+            };
+            Process.Start(si);
             Application.Exit();
         }
 
