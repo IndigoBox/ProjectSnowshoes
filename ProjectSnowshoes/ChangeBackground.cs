@@ -68,6 +68,7 @@ namespace ProjectSnowshoes
         private void browsePathButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofdlg = new OpenFileDialog();
+            ofdlg.Filter = "Image Files (*.bmp, *.jpg, *.png, *.gif)|*.bmp;*.jpg;*.png;*.gif";
             if (ofdlg.ShowDialog() == DialogResult.OK)
             {
                 pathText.Text = ofdlg.FileName;

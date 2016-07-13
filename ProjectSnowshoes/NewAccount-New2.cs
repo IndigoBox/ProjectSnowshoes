@@ -696,6 +696,7 @@ namespace ProjectSnowshoes
         {
             OpenFileDialog ofdlg = new OpenFileDialog();
             ofdlg.Title = "Choose an image...";
+            ofdlg.Filter = "Image Files (*.bmp, *.jpg, *.png, *.gif)|*.bmp;*.jpg;*.png;*.gif";
             if (ofdlg.ShowDialog() == DialogResult.OK)
             {
                 accountPicturePath = ofdlg.FileName;
@@ -714,6 +715,7 @@ namespace ProjectSnowshoes
         {
             OpenFileDialog ofdlgA = new OpenFileDialog();
             ofdlgA.Title = "Choose an image...";
+            ofdlgA.Filter = "Image Files (*.bmp, *.jpg, *.png, *.gif)|*.bmp;*.jpg;*.png;*.gif";
             if (ofdlgA.ShowDialog() == DialogResult.OK)
             {
                 lockScreenPath = ofdlgA.FileName;
@@ -725,6 +727,7 @@ namespace ProjectSnowshoes
         {
             OpenFileDialog ofdlgAA = new OpenFileDialog();
             ofdlgAA.Title = "Choose an image...";
+            ofdlgAA.Filter = "Image Files (*.bmp, *.jpg, *.png, *.gif)|*.bmp;*.jpg;*.png;*.gif";
             if (ofdlgAA.ShowDialog() == DialogResult.OK)
             {
                 spacePath = ofdlgAA.FileName;
@@ -925,7 +928,7 @@ namespace ProjectSnowshoes
             // Space
             for (int j = 0; j < Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.TopDirectoryOnly).Length; j++)
             {
-                bgWriter.ReportProgress(10, "Placing " + appsCopyPath + "on Space...");
+                bgWriter.ReportProgress(10, "Placing " + appsCopyPath + " on Space...");
                 this.Invalidate();
                 File.Copy(Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.TopDirectoryOnly)[j],
                     @"C:\ProjectSnowshoes\User\" + formalName + @"\Space\" + Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.AllDirectories)[j].Split('\\')[
