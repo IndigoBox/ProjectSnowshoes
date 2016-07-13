@@ -62,7 +62,7 @@ namespace ProjectSnowshoes
 
             imgCopyPath = @"C:\Users\" + System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1] + "\\Pictures";
             docsCopyPath = @"C:\Users\" + System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1] + "\\Documents";
-            spaceCopyPath = @"C:\Users\" + System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1] + "\\Pictures";
+            spaceCopyPath = @"C:\Users\" + System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1] + "\\Desktop";
             appsCopyPath = @"C:\Users\" + System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1] + @"\AppData\Roaming\Microsoft\Windows\Start Menu";
             Console.WriteLine(appsCopyPath);
 
@@ -781,10 +781,24 @@ namespace ProjectSnowshoes
             }
         }
 
+        
+
         private void qSetup_Click(object sender, EventArgs e)
         {
-            this.Close(); // May be logged in, so don't close entire app
+            if (Application.OpenForms.Count != 2)
+            {
+                this.Close(); // May be logged in, so don't close entire app
+                Console.WriteLine(Application.OpenForms.Count);
+            }
+            else
+            {
+                Application.Exit();
+            }
+
+            
         }
+
+        
 
         //private void bgWriter_ProgressChanged(string toPrint)
         //{
@@ -836,18 +850,28 @@ namespace ProjectSnowshoes
             bgWriter.RunWorkerAsync();
         }
 
+        private void bgWriter_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            arcadePanel_Reflektions.Text = e.UserState.ToString();
+            //Console.WriteLine("Do I get here?");
+        }
+
         private void bgWriter_DoWork(object sender, DoWorkEventArgs e)
-        { 
+        {
             // Well, here we are!
 
             // Let's start off with some of the settings the user had no idea about (evil laugh)
 
+            
+
             Properties.Settings.Default.darkerFontsOfScience.Add("Roboto");
             Properties.Settings.Default.fontsOfScience.Add("Roboto Light");
             Properties.Settings.Default.loggedIn.Add("false");
-
-            arcadePanel_Reflektions.Text = "Saving personalized settings...your files will move after this.";
-
+            bgWriter.WorkerReportsProgress = true;
+            bgWriter.ReportProgress(10, "Saving personalized settings...your files will move after this.");
+            
+            //arcadePanel_Reflektions.Text = "Saving personalized settings...your files will move after this.";
+            
             // Now to identity...
 
             Properties.Settings.Default.username.Add(formalName);
@@ -862,11 +886,13 @@ namespace ProjectSnowshoes
             Properties.Settings.Default.space_back_path.Add(spacePath);
             Properties.Settings.Default.custColor.Add(accentColor);
 
+            
+
             // Perhaps the most difficult part of them all...copying and creating all associated files and directories.
-                // About seven hours later...THIS IS ABSOLUTELY THE MOST DIFFICULT PART. Wow. 
-                // Also, should we tell the user that this is happening?
-                // Should I post that to the suggestions?
-                // Should I stop with all of the questions and move on? (Yes)
+            // About seven hours later...THIS IS ABSOLUTELY THE MOST DIFFICULT PART. Wow. 
+            // Also, should we tell the user that this is happening?
+            // Should I post that to the suggestions?
+            // Should I stop with all of the questions and move on? (Yes)
             System.IO.Directory.CreateDirectory(@"C:\ProjectSnowshoes\User\" + formalName);
             System.IO.Directory.CreateDirectory(@"C:\ProjectSnowshoes\User\" + formalName + @"\Apps");
             System.IO.Directory.CreateDirectory(@"C:\ProjectSnowshoes\User\" + formalName + @"\Documents");
@@ -879,8 +905,10 @@ namespace ProjectSnowshoes
             // Apps
             for (int i = 0; i < Directory.GetFiles(appsCopyPath,"*.lnk",SearchOption.AllDirectories).Length; i++)
             {
-                arcadePanel_Reflektions.Text = "Copying app shortcut \"" + Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\')[
-                    Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\').Length - 1] + "\"";
+                bgWriter.ReportProgress(10, "Copying app shortcut \"" + Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\')[
+                    Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\').Length - 1] + "\"");
+                //arcadePanel_Reflektions.Text = "Copying app shortcut \"" + Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\')[
+                //    Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i].Split('\\').Length - 1] + "\"";
                 this.Invalidate();
                 try { 
                 File.Copy(Directory.GetFiles(appsCopyPath, "*.lnk", SearchOption.AllDirectories)[i],
@@ -897,7 +925,7 @@ namespace ProjectSnowshoes
             // Space
             for (int j = 0; j < Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.TopDirectoryOnly).Length; j++)
             {
-                arcadePanel_Reflektions.Text = "Placing " + appsCopyPath + "on Space...";
+                bgWriter.ReportProgress(10, "Placing " + appsCopyPath + "on Space...");
                 this.Invalidate();
                 File.Copy(Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.TopDirectoryOnly)[j],
                     @"C:\ProjectSnowshoes\User\" + formalName + @"\Space\" + Directory.GetFiles(spaceCopyPath, "*.*", SearchOption.AllDirectories)[j].Split('\\')[
@@ -965,12 +993,7 @@ namespace ProjectSnowshoes
 
             Properties.Settings.Default.Save();
 
-            Properties.Settings.Default.whoIsThisCrazyDoge = Properties.Settings.Default.nickname.Count - 1;
-            Space spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaace = new Space();
-            spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaace.Show();
-            spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaace.BringToFront();
-            Properties.Settings.Default.loggedIn[Properties.Settings.Default.whoIsThisCrazyDoge] = "true";
-            this.Close();
+            return;
 
         }
 
@@ -978,6 +1001,17 @@ namespace ProjectSnowshoes
         //{
 
         //}
+
+        private void bgWriter_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            Properties.Settings.Default.whoIsThisCrazyDoge = Properties.Settings.Default.nickname.Count - 1;
+            Space spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaace = new Space();
+            spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaace.Show();
+            spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaace.BringToFront();
+            Properties.Settings.Default.loggedIn[Properties.Settings.Default.whoIsThisCrazyDoge] = "true";
+
+            this.Close();
+        }
 
         public void populateDirectories(System.IO.DirectoryInfo initPath)
         {
@@ -1014,24 +1048,28 @@ namespace ProjectSnowshoes
                 if (hiWhatNow == "Documents")
                 {
                     Directory.CreateDirectory(@"C:\ProjectSnowshoes\User\" + formalName + @"\Documents\" + initPath.FullName.Replace(docsCopyPath, ""));
-                    arcadePanel_Reflektions.Text = "Creating Directory for User: " + @"\Documents\" + initPath.FullName.Replace(docsCopyPath, "");
+                    bgWriter.ReportProgress(10, "Creating Directory for User: " + @"\Documents\" + initPath.FullName.Replace(docsCopyPath, ""));
+                    //arcadePanel_Reflektions.Text = "Creating Directory for User: " + @"\Documents\" + initPath.FullName.Replace(docsCopyPath, "");
 
                     foreach (System.IO.FileInfo fi in files)
                     {
                         File.Copy(fi.FullName, @"C:\ProjectSnowshoes\User\" + formalName + @"\Documents\" + fi.FullName.Replace(docsCopyPath,""));
-                        arcadePanel_Reflektions.Text = "Copying file: " + fi.FullName + " to Documents\\" + fi.FullName.Replace(docsCopyPath,"");
+                        bgWriter.ReportProgress(10, "Copying file: " + fi.FullName + " to Documents\\" + fi.FullName.Replace(docsCopyPath, ""));
+                        //arcadePanel_Reflektions.Text = "Copying file: " + fi.FullName + " to Documents\\" + fi.FullName.Replace(docsCopyPath,"");
                         this.Invalidate();
                     }
                 }
                 else
                 {
                     Directory.CreateDirectory(@"C:\ProjectSnowshoes\User\" + formalName + @"\Pictures\" + initPath.FullName.Replace(imgCopyPath, ""));
-                    arcadePanel_Reflektions.Text = "Creating Directory for User: " + @"\Pictures\" + initPath.FullName.Replace(imgCopyPath, "");
+                    bgWriter.ReportProgress(10, "Creating Directory for User: " + @"\Pictures\" + initPath.FullName.Replace(imgCopyPath, ""));
+                    //arcadePanel_Reflektions.Text = "Creating Directory for User: " + @"\Pictures\" + initPath.FullName.Replace(imgCopyPath, "");
                     
                     foreach (System.IO.FileInfo fi in files)
                     {
                         File.Copy(fi.FullName, @"C:\ProjectSnowshoes\User\" + formalName + @"\Pictures\" + fi.FullName.Replace(imgCopyPath, ""));
-                        arcadePanel_Reflektions.Text = "Copying file: " + fi.FullName + " to Pictures\\" + fi.FullName.Replace(imgCopyPath, "");
+                        bgWriter.ReportProgress(10, "Copying file: " + fi.FullName + " to Pictures\\" + fi.FullName.Replace(imgCopyPath, ""));
+                        //arcadePanel_Reflektions.Text = "Copying file: " + fi.FullName + " to Pictures\\" + fi.FullName.Replace(imgCopyPath, "");
                         this.Invalidate();
                     }
                 }

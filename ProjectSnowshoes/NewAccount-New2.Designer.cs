@@ -1158,6 +1158,8 @@
             // bgWriter
             // 
             this.bgWriter.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWriter_DoWork);
+            this.bgWriter.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bgWriter_ProgressChanged);
+            this.bgWriter.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWriter_RunWorkerCompleted);
             // 
             // qSetup
             // 
