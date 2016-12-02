@@ -13,7 +13,7 @@ There are two things that Project Snowshoes needs: the main program that control
 So, if you are looking for the main program code, go directly to the ProjectSnowshoes directory.
 If you are looking for various other resources, go to ClientSide.
 
-Since the process of renaming everything to work correctly is a bit tedious, you can either run the <b>CopyOnGitHub</b> executable in the main directory, or take to the command line directly. 
+Since the process of renaming everything to work correctly is a bit tedious, you can either run the <b>Installer</b> executable in the main directory, or take to the command line directly. 
 
 ```xcopy ClientSide C:\ProjectSnowshoes\ /s /y```
 will copy those files to the place Snowshoes pulls resources from (I promise, custom paths will become possible sooner or later). The conditions are to force overwriting, for if you've done this before and were not successful, or are updating. It also enables copying all subdirectories.
