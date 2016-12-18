@@ -152,33 +152,6 @@ namespace ProjectSnowshoes
             minervuh.BringToFront();
         }
 
-        private void name_MouseHover(object sender, EventArgs e)
-        {
-            /* "No pls" - everybody
-
-            This did not get a warm reaction at all from users...including me (Robert). I'm keeping the code and condensing it a bit, yet 
-            we'll just pretend this doesn't exist. I will keep the event, just in case I do use this method again. 
-
-            Transition.run(name, "ForeColor", Color.White, new TransitionType_EaseInEaseOut(300));
-            red.add(name, "BackColor", Color.Red);
-            orange.add(name, "BackColor", Color.Orange);
-            yellow.add(name, "BackColor", Color.Yellow);
-            green.add(name, "BackColor", Color.Green);
-            blue.add(name, "BackColor", Color.Blue);
-            indigo.add(name, "BackColor", Color.Indigo);
-            violet.add(name, "BackColor", Color.Violet);
-            custCol.add(name, "BackColor", Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
-            final.add(name, "BackColor", Color.Transparent);
-            final.add(name, "ForeColor", Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]));
-            Transition.runChain(red, orange, yellow, green, blue, indigo, violet, custCol);
-            */
-        }
-
-        private void name_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
-
         delegate bool EnumThreadDelegate(IntPtr hWnd, IntPtr lParam);
         [DllImport("user32.dll")]
         static extern bool EnumThreadWindows(int dwThreadId, EnumThreadDelegate lpfn,

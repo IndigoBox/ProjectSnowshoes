@@ -51,8 +51,6 @@
             this.name.Text = "Mitter";
             this.name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.name.Click += new System.EventHandler(this.name_Click);
-            this.name.MouseLeave += new System.EventHandler(this.name_MouseLeave);
-            this.name.MouseHover += new System.EventHandler(this.name_MouseHover);
             // 
             // spaceForProcesses
             // 

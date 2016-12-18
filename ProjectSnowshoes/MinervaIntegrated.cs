@@ -634,6 +634,8 @@ namespace ProjectSnowshoes
                         }
                         else
                         {
+                            
+                            
                             /* All Snowshoes-specific functionality. This really should be ported to the Windows copy as well. 
                              * Here, Minerva searches through the Apps directory for the active user and returns the shortcuts present there. 
                              * Theoretically, all apps that are installed or used by a Snowshoes user must be located there.
