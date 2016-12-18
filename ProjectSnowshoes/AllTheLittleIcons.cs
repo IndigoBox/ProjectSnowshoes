@@ -14,12 +14,20 @@ namespace ProjectSnowshoes
         Image image;
         int width;
         int height;
-        
+
+        // To avoid errors with unused variables, a small default constructor
+
+        public AllTheLittleIcons()
+        {
+            width = 1;
+            height = 1;
+        }
+
         public AllTheLittleIcons(Image img)
             {
                 image = img;
-                int width = image.Width;
-                int height = image.Height;
+                width = image.Width;
+                height = image.Height;
             }
 
             protected override void OnPaint(PaintEventArgs e)
