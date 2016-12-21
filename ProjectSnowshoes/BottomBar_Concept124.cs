@@ -184,14 +184,18 @@ namespace ProjectSnowshoes
 
         private void goGenerateProcessesFriendship()
         {
-            int artOfficial = 0;
+            
+            int artOfficial = Process.GetProcesses().Length;
+            
+            /* Previous code for tallying after we get the processes...which is just a waste of time. Still, it's here. 
             foreach (var theProcess in Process.GetProcesses())
             {
                 if (theProcess.MainWindowTitle != "" && theProcess.MainWindowTitle != "Space")
                 {
                     artOfficial++;
                 }
-            }
+            }*/
+            
 
             if (artOfficial != currentCountProc)
             {
