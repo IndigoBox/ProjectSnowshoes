@@ -56,7 +56,7 @@ namespace ProjectSnowshoes
 
             accountPicturePath = @"C:\ProjectSnowshoes\System\Media\DefaultIcon.png";
             lockScreenPath = @"C:\ProjectSnowshoes\System\Media\blackBackSearch.png";
-            spacePath = @"C:\ProjectSnowshoes\System\Media\RunningOnIce.png";
+            spacePath = @"C:\ProjectSnowshoes\System\Media\S.R. Crown Hall.png";
 
             // Presets for document copying
 
