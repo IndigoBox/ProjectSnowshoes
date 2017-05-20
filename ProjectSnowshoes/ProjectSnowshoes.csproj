@@ -774,6 +774,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PS.ico" />
+    <None Include="Resources\TheIndigoBlueConsortium.png" />
     <None Include="Resources\GrayLeftArrow.png" />
     <None Include="Resources\SegoeUIEmoji-Tongue.png" />
   </ItemGroup>

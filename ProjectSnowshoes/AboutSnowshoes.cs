@@ -25,9 +25,9 @@ namespace ProjectSnowshoes
         private void AboutSnowshoes_Load(object sender, EventArgs e)
         {
 
-            projSnow.BackColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
+            projSnow.ForeColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
             procButton.BackColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
-            referenceTitle.ForeColor = Color.FromName(Properties.Settings.Default.custColor[Properties.Settings.Default.whoIsThisCrazyDoge]);
+            
             
             
         }

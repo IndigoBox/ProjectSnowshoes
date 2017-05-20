@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Name inspired by the 1986 Billy Joel album. IndigoBox is not affiliated with Billy Joel or Columbia Records in any way, and does not offer endorsement, advertisement, or reuse of works belonging to Columbia.</value>
+  </data>
 </root>
