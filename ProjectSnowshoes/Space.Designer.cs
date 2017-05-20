@@ -87,6 +87,7 @@
             this.timeSpaceContinuum = new System.Windows.Forms.Label();
             this.spaceForIcons = new System.Windows.Forms.FlowLayoutPanel();
             this.openFileToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.aboutSnowshoesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spaceRightClick.SuspendLayout();
             this.rightClickDevStrip.SuspendLayout();
             this.sidebar.SuspendLayout();
@@ -110,19 +111,22 @@
             // 
             this.spaceRightClick.BackColor = System.Drawing.Color.WhiteSmoke;
             this.spaceRightClick.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.spaceRightClick.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.spaceRightClick.ImeMode = System.Windows.Forms.ImeMode.On;
             this.spaceRightClick.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.changeBackgroundToolStripMenuItem});
+            this.changeBackgroundToolStripMenuItem,
+            this.aboutSnowshoesToolStripMenuItem});
             this.spaceRightClick.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
             this.spaceRightClick.Name = "spaceRightClick";
-            this.spaceRightClick.Size = new System.Drawing.Size(193, 26);
+            this.spaceRightClick.Size = new System.Drawing.Size(301, 110);
+            this.spaceRightClick.Opening += new System.ComponentModel.CancelEventHandler(this.spaceRightClick_Opening);
             // 
             // changeBackgroundToolStripMenuItem
             // 
             this.changeBackgroundToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.changeBackgroundToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.changeBackgroundToolStripMenuItem.Name = "changeBackgroundToolStripMenuItem";
-            this.changeBackgroundToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.changeBackgroundToolStripMenuItem.Size = new System.Drawing.Size(300, 34);
             this.changeBackgroundToolStripMenuItem.Text = "Change Aesthetics";
             this.changeBackgroundToolStripMenuItem.Click += new System.EventHandler(this.changeBackgroundToolStripMenuItem_Click);
             this.changeBackgroundToolStripMenuItem.MouseHover += new System.EventHandler(this.changeBackgroundToolStripMenuItem_Hover);
@@ -131,13 +135,14 @@
             // 
             this.rightClickDevStrip.BackColor = System.Drawing.Color.WhiteSmoke;
             this.rightClickDevStrip.Font = new System.Drawing.Font("Roboto Light", 10.25F);
+            this.rightClickDevStrip.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.rightClickDevStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.deprecatedFormsToolStripMenuItem,
             this.loadFormToolStripMenuItem,
             this.toolStripSeparator2,
             this.aboutToolStripMenuItem});
             this.rightClickDevStrip.Name = "rightClickDevStrip";
-            this.rightClickDevStrip.Size = new System.Drawing.Size(191, 76);
+            this.rightClickDevStrip.Size = new System.Drawing.Size(299, 112);
             this.rightClickDevStrip.Opening += new System.ComponentModel.CancelEventHandler(this.rightClickDevStrip_Opening);
             // 
             // deprecatedFormsToolStripMenuItem
@@ -145,13 +150,13 @@
             this.deprecatedFormsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logincsToolStripMenuItem});
             this.deprecatedFormsToolStripMenuItem.Name = "deprecatedFormsToolStripMenuItem";
-            this.deprecatedFormsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.deprecatedFormsToolStripMenuItem.Size = new System.Drawing.Size(298, 34);
             this.deprecatedFormsToolStripMenuItem.Text = "Deprecated Forms";
             // 
             // logincsToolStripMenuItem
             // 
             this.logincsToolStripMenuItem.Name = "logincsToolStripMenuItem";
-            this.logincsToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.logincsToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.logincsToolStripMenuItem.Text = "Login";
             this.logincsToolStripMenuItem.Click += new System.EventHandler(this.logincsToolStripMenuItem_Click);
             // 
@@ -167,74 +172,74 @@
             this.slidingMenuBarToolStripMenuItem,
             this.lockScreenTrueColorsV2ToolStripMenuItem});
             this.loadFormToolStripMenuItem.Name = "loadFormToolStripMenuItem";
-            this.loadFormToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.loadFormToolStripMenuItem.Size = new System.Drawing.Size(298, 34);
             this.loadFormToolStripMenuItem.Text = "Load Form";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(290, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(464, 34);
             this.toolStripMenuItem2.Text = "9/24/2014";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // virtualKeyboardsForScienceToolStripMenuItem
             // 
             this.virtualKeyboardsForScienceToolStripMenuItem.Name = "virtualKeyboardsForScienceToolStripMenuItem";
-            this.virtualKeyboardsForScienceToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
+            this.virtualKeyboardsForScienceToolStripMenuItem.Size = new System.Drawing.Size(464, 34);
             this.virtualKeyboardsForScienceToolStripMenuItem.Text = "VirtualKeyboardsForScience";
             this.virtualKeyboardsForScienceToolStripMenuItem.Click += new System.EventHandler(this.virtualKeyboardsForScienceToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(290, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(464, 34);
             this.toolStripMenuItem1.Text = "BattCritical";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // thanksScn9AToolStripMenuItem
             // 
             this.thanksScn9AToolStripMenuItem.Name = "thanksScn9AToolStripMenuItem";
-            this.thanksScn9AToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
+            this.thanksScn9AToolStripMenuItem.Size = new System.Drawing.Size(464, 34);
             this.thanksScn9AToolStripMenuItem.Text = "ThanksScn9A";
             this.thanksScn9AToolStripMenuItem.Click += new System.EventHandler(this.thanksScn9AToolStripMenuItem_Click);
             // 
             // battLowToolStripMenuItem
             // 
             this.battLowToolStripMenuItem.Name = "battLowToolStripMenuItem";
-            this.battLowToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
+            this.battLowToolStripMenuItem.Size = new System.Drawing.Size(464, 34);
             this.battLowToolStripMenuItem.Text = "BattLow";
             this.battLowToolStripMenuItem.Click += new System.EventHandler(this.battLowToolStripMenuItem_Click);
             // 
             // customSearchImplementationOneToolStripMenuItem
             // 
             this.customSearchImplementationOneToolStripMenuItem.Name = "customSearchImplementationOneToolStripMenuItem";
-            this.customSearchImplementationOneToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
+            this.customSearchImplementationOneToolStripMenuItem.Size = new System.Drawing.Size(464, 34);
             this.customSearchImplementationOneToolStripMenuItem.Text = "CustomSearchImplementationOne";
             this.customSearchImplementationOneToolStripMenuItem.Click += new System.EventHandler(this.customSearchImplementationOneToolStripMenuItem_Click);
             // 
             // slidingMenuBarToolStripMenuItem
             // 
             this.slidingMenuBarToolStripMenuItem.Name = "slidingMenuBarToolStripMenuItem";
-            this.slidingMenuBarToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
+            this.slidingMenuBarToolStripMenuItem.Size = new System.Drawing.Size(464, 34);
             this.slidingMenuBarToolStripMenuItem.Text = "SlidingMenuBar";
             this.slidingMenuBarToolStripMenuItem.Click += new System.EventHandler(this.slidingMenuBarToolStripMenuItem_Click);
             // 
             // lockScreenTrueColorsV2ToolStripMenuItem
             // 
             this.lockScreenTrueColorsV2ToolStripMenuItem.Name = "lockScreenTrueColorsV2ToolStripMenuItem";
-            this.lockScreenTrueColorsV2ToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
+            this.lockScreenTrueColorsV2ToolStripMenuItem.Size = new System.Drawing.Size(464, 34);
             this.lockScreenTrueColorsV2ToolStripMenuItem.Text = "LockScreen-TrueColors-V2";
             this.lockScreenTrueColorsV2ToolStripMenuItem.Click += new System.EventHandler(this.lockScreenTrueColorsV2ToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(187, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(295, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(298, 34);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -291,9 +296,10 @@
             this.sidebar.Controls.Add(this.exitWindowsText);
             this.sidebar.Controls.Add(this.exitWindows);
             this.sidebar.Controls.Add(this.panel3);
-            this.sidebar.Location = new System.Drawing.Point(-300, 0);
+            this.sidebar.Location = new System.Drawing.Point(-550, 0);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(300, 900);
+            this.sidebar.Size = new System.Drawing.Size(550, 1662);
             this.sidebar.TabIndex = 2;
             this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebar_Paint);
             // 
@@ -303,9 +309,10 @@
             this.n7c.BackColor = System.Drawing.Color.Transparent;
             this.n7c.Font = new System.Drawing.Font("Roboto Light", 9.25F);
             this.n7c.ForeColor = System.Drawing.Color.DimGray;
-            this.n7c.Location = new System.Drawing.Point(76, 765);
+            this.n7c.Location = new System.Drawing.Point(139, 1412);
+            this.n7c.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n7c.Name = "n7c";
-            this.n7c.Size = new System.Drawing.Size(221, 60);
+            this.n7c.Size = new System.Drawing.Size(405, 111);
             this.n7c.TabIndex = 19;
             this.n7c.Text = "At least, it will be soon. You better get going. The quick brown fox jumps over t" +
     "he lazy doge. Woot woot and turn up, and here is some more text.";
@@ -318,9 +325,10 @@
             this.n5c.BackColor = System.Drawing.Color.Transparent;
             this.n5c.Font = new System.Drawing.Font("Roboto Light", 9.25F);
             this.n5c.ForeColor = System.Drawing.Color.DimGray;
-            this.n5c.Location = new System.Drawing.Point(76, 560);
+            this.n5c.Location = new System.Drawing.Point(139, 1034);
+            this.n5c.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n5c.Name = "n5c";
-            this.n5c.Size = new System.Drawing.Size(221, 60);
+            this.n5c.Size = new System.Drawing.Size(405, 111);
             this.n5c.TabIndex = 19;
             this.n5c.Text = "At least, it will be soon. You better get going. The quick brown fox jumps over t" +
     "he lazy doge. Woot woot and turn up, and here is some more text.";
@@ -333,9 +341,10 @@
             this.n7b.BackColor = System.Drawing.Color.Transparent;
             this.n7b.Font = new System.Drawing.Font("Roboto Light", 11.25F);
             this.n7b.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.n7b.Location = new System.Drawing.Point(75, 743);
+            this.n7b.Location = new System.Drawing.Point(138, 1372);
+            this.n7b.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n7b.Name = "n7b";
-            this.n7b.Size = new System.Drawing.Size(222, 22);
+            this.n7b.Size = new System.Drawing.Size(407, 41);
             this.n7b.TabIndex = 18;
             this.n7b.Text = "It\'s midnight.";
             this.n7b.Visible = false;
@@ -347,9 +356,10 @@
             this.n5b.BackColor = System.Drawing.Color.Transparent;
             this.n5b.Font = new System.Drawing.Font("Roboto Light", 11.25F);
             this.n5b.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.n5b.Location = new System.Drawing.Point(75, 538);
+            this.n5b.Location = new System.Drawing.Point(138, 993);
+            this.n5b.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n5b.Name = "n5b";
-            this.n5b.Size = new System.Drawing.Size(222, 22);
+            this.n5b.Size = new System.Drawing.Size(407, 41);
             this.n5b.TabIndex = 18;
             this.n5b.Text = "It\'s midnight.";
             this.n5b.Visible = false;
@@ -357,9 +367,10 @@
             // 
             // n7a
             // 
-            this.n7a.Location = new System.Drawing.Point(5, 749);
+            this.n7a.Location = new System.Drawing.Point(9, 1383);
+            this.n7a.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.n7a.Name = "n7a";
-            this.n7a.Size = new System.Drawing.Size(65, 65);
+            this.n7a.Size = new System.Drawing.Size(119, 120);
             this.n7a.TabIndex = 17;
             this.n7a.TabStop = false;
             this.n7a.Visible = false;
@@ -367,9 +378,10 @@
             // 
             // n5a
             // 
-            this.n5a.Location = new System.Drawing.Point(5, 544);
+            this.n5a.Location = new System.Drawing.Point(9, 1004);
+            this.n5a.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.n5a.Name = "n5a";
-            this.n5a.Size = new System.Drawing.Size(65, 65);
+            this.n5a.Size = new System.Drawing.Size(119, 120);
             this.n5a.TabIndex = 17;
             this.n5a.TabStop = false;
             this.n5a.Visible = false;
@@ -381,9 +393,10 @@
             this.n6c.BackColor = System.Drawing.Color.Transparent;
             this.n6c.Font = new System.Drawing.Font("Roboto Light", 9.25F);
             this.n6c.ForeColor = System.Drawing.Color.DimGray;
-            this.n6c.Location = new System.Drawing.Point(76, 662);
+            this.n6c.Location = new System.Drawing.Point(139, 1222);
+            this.n6c.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n6c.Name = "n6c";
-            this.n6c.Size = new System.Drawing.Size(221, 60);
+            this.n6c.Size = new System.Drawing.Size(405, 111);
             this.n6c.TabIndex = 16;
             this.n6c.Text = "At least, it will be soon. You better get going. The quick brown fox jumps over t" +
     "he lazy doge. Woot woot and turn up, and here is some more text.";
@@ -396,9 +409,10 @@
             this.n4c.BackColor = System.Drawing.Color.Transparent;
             this.n4c.Font = new System.Drawing.Font("Roboto Light", 9.25F);
             this.n4c.ForeColor = System.Drawing.Color.DimGray;
-            this.n4c.Location = new System.Drawing.Point(76, 457);
+            this.n4c.Location = new System.Drawing.Point(139, 844);
+            this.n4c.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n4c.Name = "n4c";
-            this.n4c.Size = new System.Drawing.Size(221, 60);
+            this.n4c.Size = new System.Drawing.Size(405, 111);
             this.n4c.TabIndex = 16;
             this.n4c.Text = "At least, it will be soon. You better get going. The quick brown fox jumps over t" +
     "he lazy doge. Woot woot and turn up, and here is some more text.";
@@ -411,9 +425,10 @@
             this.n6b.BackColor = System.Drawing.Color.Transparent;
             this.n6b.Font = new System.Drawing.Font("Roboto Light", 11.25F);
             this.n6b.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.n6b.Location = new System.Drawing.Point(75, 640);
+            this.n6b.Location = new System.Drawing.Point(138, 1182);
+            this.n6b.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n6b.Name = "n6b";
-            this.n6b.Size = new System.Drawing.Size(222, 22);
+            this.n6b.Size = new System.Drawing.Size(407, 41);
             this.n6b.TabIndex = 15;
             this.n6b.Text = "It\'s midnight.";
             this.n6b.Visible = false;
@@ -425,9 +440,10 @@
             this.n4b.BackColor = System.Drawing.Color.Transparent;
             this.n4b.Font = new System.Drawing.Font("Roboto Light", 11.25F);
             this.n4b.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.n4b.Location = new System.Drawing.Point(75, 435);
+            this.n4b.Location = new System.Drawing.Point(138, 803);
+            this.n4b.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n4b.Name = "n4b";
-            this.n4b.Size = new System.Drawing.Size(222, 22);
+            this.n4b.Size = new System.Drawing.Size(407, 41);
             this.n4b.TabIndex = 15;
             this.n4b.Text = "It\'s midnight.";
             this.n4b.Visible = false;
@@ -435,9 +451,10 @@
             // 
             // n6a
             // 
-            this.n6a.Location = new System.Drawing.Point(5, 646);
+            this.n6a.Location = new System.Drawing.Point(9, 1193);
+            this.n6a.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.n6a.Name = "n6a";
-            this.n6a.Size = new System.Drawing.Size(65, 65);
+            this.n6a.Size = new System.Drawing.Size(119, 120);
             this.n6a.TabIndex = 14;
             this.n6a.TabStop = false;
             this.n6a.Visible = false;
@@ -445,9 +462,10 @@
             // 
             // n4a
             // 
-            this.n4a.Location = new System.Drawing.Point(5, 441);
+            this.n4a.Location = new System.Drawing.Point(9, 814);
+            this.n4a.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.n4a.Name = "n4a";
-            this.n4a.Size = new System.Drawing.Size(65, 65);
+            this.n4a.Size = new System.Drawing.Size(119, 120);
             this.n4a.TabIndex = 14;
             this.n4a.TabStop = false;
             this.n4a.Visible = false;
@@ -459,9 +477,10 @@
             this.n3c.BackColor = System.Drawing.Color.Transparent;
             this.n3c.Font = new System.Drawing.Font("Roboto Light", 9.25F);
             this.n3c.ForeColor = System.Drawing.Color.DimGray;
-            this.n3c.Location = new System.Drawing.Point(76, 354);
+            this.n3c.Location = new System.Drawing.Point(139, 654);
+            this.n3c.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n3c.Name = "n3c";
-            this.n3c.Size = new System.Drawing.Size(221, 60);
+            this.n3c.Size = new System.Drawing.Size(405, 111);
             this.n3c.TabIndex = 13;
             this.n3c.Text = "At least, it will be soon. You better get going. The quick brown fox jumps over t" +
     "he lazy doge. Woot woot and turn up, and here is some more text.";
@@ -474,9 +493,10 @@
             this.n3b.BackColor = System.Drawing.Color.Transparent;
             this.n3b.Font = new System.Drawing.Font("Roboto Light", 11.25F);
             this.n3b.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.n3b.Location = new System.Drawing.Point(75, 332);
+            this.n3b.Location = new System.Drawing.Point(138, 613);
+            this.n3b.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n3b.Name = "n3b";
-            this.n3b.Size = new System.Drawing.Size(222, 22);
+            this.n3b.Size = new System.Drawing.Size(407, 41);
             this.n3b.TabIndex = 12;
             this.n3b.Text = "It\'s midnight.";
             this.n3b.Visible = false;
@@ -484,9 +504,10 @@
             // 
             // n3a
             // 
-            this.n3a.Location = new System.Drawing.Point(5, 338);
+            this.n3a.Location = new System.Drawing.Point(9, 624);
+            this.n3a.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.n3a.Name = "n3a";
-            this.n3a.Size = new System.Drawing.Size(65, 65);
+            this.n3a.Size = new System.Drawing.Size(119, 120);
             this.n3a.TabIndex = 11;
             this.n3a.TabStop = false;
             this.n3a.Visible = false;
@@ -498,9 +519,10 @@
             this.n2c.BackColor = System.Drawing.Color.Transparent;
             this.n2c.Font = new System.Drawing.Font("Roboto Light", 9.25F);
             this.n2c.ForeColor = System.Drawing.Color.DimGray;
-            this.n2c.Location = new System.Drawing.Point(76, 253);
+            this.n2c.Location = new System.Drawing.Point(139, 467);
+            this.n2c.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n2c.Name = "n2c";
-            this.n2c.Size = new System.Drawing.Size(221, 60);
+            this.n2c.Size = new System.Drawing.Size(405, 111);
             this.n2c.TabIndex = 10;
             this.n2c.Text = "At least, it will be soon. You better get going. The quick brown fox jumps over t" +
     "he lazy doge. Woot woot and turn up, and here is some more text.";
@@ -513,9 +535,10 @@
             this.n2b.BackColor = System.Drawing.Color.Transparent;
             this.n2b.Font = new System.Drawing.Font("Roboto Light", 11.25F);
             this.n2b.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.n2b.Location = new System.Drawing.Point(75, 231);
+            this.n2b.Location = new System.Drawing.Point(138, 426);
+            this.n2b.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n2b.Name = "n2b";
-            this.n2b.Size = new System.Drawing.Size(222, 22);
+            this.n2b.Size = new System.Drawing.Size(407, 41);
             this.n2b.TabIndex = 9;
             this.n2b.Text = "It\'s midnight.";
             this.n2b.Visible = false;
@@ -523,9 +546,10 @@
             // 
             // n2a
             // 
-            this.n2a.Location = new System.Drawing.Point(5, 237);
+            this.n2a.Location = new System.Drawing.Point(9, 438);
+            this.n2a.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.n2a.Name = "n2a";
-            this.n2a.Size = new System.Drawing.Size(65, 65);
+            this.n2a.Size = new System.Drawing.Size(119, 120);
             this.n2a.TabIndex = 8;
             this.n2a.TabStop = false;
             this.n2a.Visible = false;
@@ -537,9 +561,10 @@
             this.n1c.BackColor = System.Drawing.Color.Transparent;
             this.n1c.Font = new System.Drawing.Font("Roboto Light", 9.25F);
             this.n1c.ForeColor = System.Drawing.Color.DimGray;
-            this.n1c.Location = new System.Drawing.Point(76, 152);
+            this.n1c.Location = new System.Drawing.Point(139, 281);
+            this.n1c.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n1c.Name = "n1c";
-            this.n1c.Size = new System.Drawing.Size(221, 60);
+            this.n1c.Size = new System.Drawing.Size(405, 111);
             this.n1c.TabIndex = 7;
             this.n1c.Text = "At least, it will be soon. You better get going. The quick brown fox jumps over t" +
     "he lazy doge. Woot woot and turn up, and here is some more text.";
@@ -551,9 +576,10 @@
             this.powerText.AutoSize = true;
             this.powerText.Font = new System.Drawing.Font("Roboto Light", 10.25F);
             this.powerText.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.powerText.Location = new System.Drawing.Point(214, 874);
+            this.powerText.Location = new System.Drawing.Point(392, 1614);
+            this.powerText.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.powerText.Name = "powerText";
-            this.powerText.Size = new System.Drawing.Size(70, 17);
+            this.powerText.Size = new System.Drawing.Size(117, 29);
             this.powerText.TabIndex = 7;
             this.powerText.Text = "Power Off";
             this.powerText.Click += new System.EventHandler(this.powerText_Click);
@@ -564,9 +590,10 @@
             this.n1b.BackColor = System.Drawing.Color.Transparent;
             this.n1b.Font = new System.Drawing.Font("Roboto Light", 11.25F);
             this.n1b.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.n1b.Location = new System.Drawing.Point(75, 130);
+            this.n1b.Location = new System.Drawing.Point(138, 240);
+            this.n1b.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.n1b.Name = "n1b";
-            this.n1b.Size = new System.Drawing.Size(222, 22);
+            this.n1b.Size = new System.Drawing.Size(407, 41);
             this.n1b.TabIndex = 6;
             this.n1b.Text = "It\'s midnight.";
             this.n1b.Visible = false;
@@ -575,9 +602,10 @@
             // powerOff
             // 
             this.powerOff.Image = global::ProjectSnowshoes.Properties.Resources.Power;
-            this.powerOff.Location = new System.Drawing.Point(177, 871);
+            this.powerOff.Location = new System.Drawing.Point(325, 1608);
+            this.powerOff.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.powerOff.Name = "powerOff";
-            this.powerOff.Size = new System.Drawing.Size(31, 26);
+            this.powerOff.Size = new System.Drawing.Size(57, 48);
             this.powerOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.powerOff.TabIndex = 6;
             this.powerOff.TabStop = false;
@@ -585,9 +613,10 @@
             // 
             // n1a
             // 
-            this.n1a.Location = new System.Drawing.Point(5, 136);
+            this.n1a.Location = new System.Drawing.Point(9, 251);
+            this.n1a.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.n1a.Name = "n1a";
-            this.n1a.Size = new System.Drawing.Size(65, 65);
+            this.n1a.Size = new System.Drawing.Size(119, 120);
             this.n1a.TabIndex = 5;
             this.n1a.TabStop = false;
             this.n1a.Visible = false;
@@ -598,9 +627,10 @@
             this.exitWindowsText.AutoSize = true;
             this.exitWindowsText.Font = new System.Drawing.Font("Roboto Light", 10.25F);
             this.exitWindowsText.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.exitWindowsText.Location = new System.Drawing.Point(48, 874);
+            this.exitWindowsText.Location = new System.Drawing.Point(88, 1614);
+            this.exitWindowsText.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.exitWindowsText.Name = "exitWindowsText";
-            this.exitWindowsText.Size = new System.Drawing.Size(108, 17);
+            this.exitWindowsText.Size = new System.Drawing.Size(181, 29);
             this.exitWindowsText.TabIndex = 5;
             this.exitWindowsText.Text = "Exit to Windows";
             this.exitWindowsText.Click += new System.EventHandler(this.exitWindowsText_Click);
@@ -608,9 +638,10 @@
             // exitWindows
             // 
             this.exitWindows.Image = global::ProjectSnowshoes.Properties.Resources.ToWindows;
-            this.exitWindows.Location = new System.Drawing.Point(15, 871);
+            this.exitWindows.Location = new System.Drawing.Point(28, 1608);
+            this.exitWindows.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.exitWindows.Name = "exitWindows";
-            this.exitWindows.Size = new System.Drawing.Size(31, 26);
+            this.exitWindows.Size = new System.Drawing.Size(57, 48);
             this.exitWindows.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exitWindows.TabIndex = 4;
             this.exitWindows.TabStop = false;
@@ -622,8 +653,9 @@
             this.panel3.Controls.Add(this.date);
             this.panel3.Controls.Add(this.time);
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(300, 122);
+            this.panel3.Size = new System.Drawing.Size(550, 225);
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -631,9 +663,10 @@
             // 
             this.date.Font = new System.Drawing.Font("Roboto Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.date.ForeColor = System.Drawing.Color.LightGray;
-            this.date.Location = new System.Drawing.Point(0, 78);
+            this.date.Location = new System.Drawing.Point(0, 144);
+            this.date.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(300, 44);
+            this.date.Size = new System.Drawing.Size(550, 81);
             this.date.TabIndex = 4;
             this.date.Text = "July 23, 2014";
             this.date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -644,8 +677,9 @@
             this.time.Font = new System.Drawing.Font("Roboto Light", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.time.ForeColor = System.Drawing.Color.White;
             this.time.Location = new System.Drawing.Point(0, 0);
+            this.time.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(300, 95);
+            this.time.Size = new System.Drawing.Size(550, 175);
             this.time.TabIndex = 3;
             this.time.Text = "10:47 PM";
             this.time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -662,8 +696,9 @@
             this.panel1.Controls.Add(this.spaceForIcons);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(683, 399);
+            this.panel1.Size = new System.Drawing.Size(1252, 737);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -672,9 +707,10 @@
             this.accountImg.BackColor = System.Drawing.Color.WhiteSmoke;
             this.accountImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.accountImg.ContextMenuStrip = this.rightClickDevStrip;
-            this.accountImg.Location = new System.Drawing.Point(0, 284);
+            this.accountImg.Location = new System.Drawing.Point(0, 524);
+            this.accountImg.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.accountImg.Name = "accountImg";
-            this.accountImg.Size = new System.Drawing.Size(72, 75);
+            this.accountImg.Size = new System.Drawing.Size(132, 138);
             this.accountImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.accountImg.TabIndex = 1;
             this.accountImg.TabStop = false;
@@ -688,10 +724,10 @@
             this.bottomPanel.Controls.Add(this.name);
             this.bottomPanel.Controls.Add(this.timeSpaceContinuum);
             this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomPanel.Location = new System.Drawing.Point(0, 363);
-            this.bottomPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.bottomPanel.Location = new System.Drawing.Point(0, 671);
+            this.bottomPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bottomPanel.Name = "bottomPanel";
-            this.bottomPanel.Size = new System.Drawing.Size(683, 36);
+            this.bottomPanel.Size = new System.Drawing.Size(1252, 66);
             this.bottomPanel.TabIndex = 5;
             this.bottomPanel.Visible = false;
             // 
@@ -701,11 +737,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.spaceForProcesses.AutoScroll = true;
             this.spaceForProcesses.BackgroundImage = global::ProjectSnowshoes.Properties.Resources._50pertrans;
-            this.spaceForProcesses.Location = new System.Drawing.Point(77, 4);
-            this.spaceForProcesses.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.spaceForProcesses.Location = new System.Drawing.Point(141, 7);
+            this.spaceForProcesses.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.spaceForProcesses.Name = "spaceForProcesses";
-            this.spaceForProcesses.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.spaceForProcesses.Size = new System.Drawing.Size(490, 31);
+            this.spaceForProcesses.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.spaceForProcesses.Size = new System.Drawing.Size(898, 57);
             this.spaceForProcesses.TabIndex = 8;
             this.spaceForProcesses.Visible = false;
             this.spaceForProcesses.Paint += new System.Windows.Forms.PaintEventHandler(this.spaceForProcesses_Paint);
@@ -715,10 +751,10 @@
             this.dogeAccountImg.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.dogeAccountImg.BackgroundImage = global::ProjectSnowshoes.Properties.Resources.Minerva;
             this.dogeAccountImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.dogeAccountImg.Location = new System.Drawing.Point(571, 4);
-            this.dogeAccountImg.Margin = new System.Windows.Forms.Padding(2);
+            this.dogeAccountImg.Location = new System.Drawing.Point(1047, 7);
+            this.dogeAccountImg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dogeAccountImg.Name = "dogeAccountImg";
-            this.dogeAccountImg.Size = new System.Drawing.Size(25, 26);
+            this.dogeAccountImg.Size = new System.Drawing.Size(46, 48);
             this.dogeAccountImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dogeAccountImg.TabIndex = 7;
             this.dogeAccountImg.TabStop = false;
@@ -733,8 +769,9 @@
             this.name.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.name.ForeColor = System.Drawing.Color.White;
             this.name.Location = new System.Drawing.Point(0, 0);
+            this.name.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(72, 36);
+            this.name.Size = new System.Drawing.Size(132, 66);
             this.name.TabIndex = 0;
             this.name.Text = "Robert";
             this.name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -747,10 +784,10 @@
             this.timeSpaceContinuum.BackColor = System.Drawing.Color.Transparent;
             this.timeSpaceContinuum.Font = new System.Drawing.Font("Roboto", 10.875F);
             this.timeSpaceContinuum.ForeColor = System.Drawing.Color.DimGray;
-            this.timeSpaceContinuum.Location = new System.Drawing.Point(599, 0);
-            this.timeSpaceContinuum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.timeSpaceContinuum.Location = new System.Drawing.Point(1098, 0);
+            this.timeSpaceContinuum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timeSpaceContinuum.Name = "timeSpaceContinuum";
-            this.timeSpaceContinuum.Size = new System.Drawing.Size(84, 36);
+            this.timeSpaceContinuum.Size = new System.Drawing.Size(154, 66);
             this.timeSpaceContinuum.TabIndex = 6;
             this.timeSpaceContinuum.Text = "9:26 AM";
             this.timeSpaceContinuum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -765,24 +802,32 @@
             this.spaceForIcons.AutoScroll = true;
             this.spaceForIcons.BackColor = System.Drawing.Color.Transparent;
             this.spaceForIcons.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.spaceForIcons.Location = new System.Drawing.Point(166, 48);
-            this.spaceForIcons.Margin = new System.Windows.Forms.Padding(10);
+            this.spaceForIcons.Location = new System.Drawing.Point(304, 89);
+            this.spaceForIcons.Margin = new System.Windows.Forms.Padding(18, 18, 18, 18);
             this.spaceForIcons.Name = "spaceForIcons";
-            this.spaceForIcons.Size = new System.Drawing.Size(350, 304);
+            this.spaceForIcons.Size = new System.Drawing.Size(642, 561);
             this.spaceForIcons.TabIndex = 4;
             this.spaceForIcons.Visible = false;
             this.spaceForIcons.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
+            // aboutSnowshoesToolStripMenuItem
+            // 
+            this.aboutSnowshoesToolStripMenuItem.Name = "aboutSnowshoesToolStripMenuItem";
+            this.aboutSnowshoesToolStripMenuItem.Size = new System.Drawing.Size(300, 34);
+            this.aboutSnowshoesToolStripMenuItem.Text = "About Snowshoes";
+            this.aboutSnowshoesToolStripMenuItem.Click += new System.EventHandler(this.aboutSnowshoesToolStripMenuItem_Click);
+            // 
             // Space
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(683, 399);
+            this.ClientSize = new System.Drawing.Size(1252, 737);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Space";
             this.Text = "Space";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -870,5 +915,6 @@
         private System.Windows.Forms.ToolStripMenuItem customSearchImplementationOneToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem slidingMenuBarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lockScreenTrueColorsV2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutSnowshoesToolStripMenuItem;
     }
 }

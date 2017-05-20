@@ -928,6 +928,18 @@ namespace ProjectSnowshoes
             battCriticalHm.BringToFront();
         }
 
+        private void spaceRightClick_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void aboutSnowshoesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutSnowshoes aboutBox = new AboutSnowshoes();
+            aboutBox.Show();
+            aboutBox.BringToFront();
+        }
+
         private void battLowToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BattLow battLowA = new BattLow();
